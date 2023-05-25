@@ -175,7 +175,7 @@ const Dashboard = () => {
                   style={{ width: '50px', height: '50px' }}
                 />
                 <BootstrapCard.Title as="h4" style={{ fontSize: '15px', marginLeft: '10px' }}>
-                  <a href="https://docs.google.com/spreadsheets/d/1A__5WacsvBT4hsyCHvaeg4RkWbu4sp55hIa3oFyB8uY/edit" target="_blank">
+                  <a href="https://analytics.zoho.com/open-view/2737732000000052268" target="_blank">
                     Visualizar OS em Excel
                   </a>
                 </BootstrapCard.Title>
