@@ -23,7 +23,8 @@ import Icons from "views/Icons.js";
 import Maps from "views/Maps.js";
 import Notifications from "views/Notifications.js";
 import Grafico from "views/Grafico.js";
-import Certificados from "views/Certificados.js"
+import Certificados from "views/Certificados.js";
+import Catalogo from "views/Catalogo.js";
 
 
 const dashboardRoutes = [
@@ -38,7 +39,7 @@ const dashboardRoutes = [
   {
     path: "/Graficos",
     name: "Graficos Power BI",
-    icon: "nc-icon nc-chart-pie-36",
+    icon: "nc-icon nc-chart-bar-32",
     component: Grafico,
     layout: "/admin"
   },
@@ -60,17 +61,24 @@ const dashboardRoutes = [
   {
     path: "/maps",
     name: "Mapa de Rede",
-    icon: "nc-icon nc-pin-3",
+    icon: "nc-icon nc-map-big",
     component: Maps,
     layout: "/admin"
   },
   {
     path: "/certificados",
     name: "Certificados",
-    icon: "/impressora.png",
+    icon: "nc-icon nc-single-copy-04",
     component: Certificados,
     layout: "/admin"
   },
+  {
+    path: "/catalogo_ead",
+    name: "Catalogo EAD",
+    icon: "nc-icon nc-ruler-pencil",
+    component: Catalogo,
+    layout: "/admin"
+  }
 
 ];
 
