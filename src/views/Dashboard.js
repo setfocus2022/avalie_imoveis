@@ -50,7 +50,7 @@ const Dashboard = () => {
             title="OS"
             width="1090"
             height="550"
-            src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+            src="https://analytics.zoho.com/open-view/2737732000000052268"
             frameBorder="0"
             allowFullScreen
           ></iframe>
