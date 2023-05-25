@@ -10,7 +10,7 @@ const YourComponent = () => {
       
       {/* Embed do GitMind */}
       <iframe
-        src="https://gitmind.com/app/docs/mk4nw5k6"
+        src="https://app.powerbi.com/view?r=eyJrIjoiYjVlNGRhYWMtODFhZC00MTJlLWI2YjMtZTI1Y2RkNTU1NzgyIiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
         title="GitMind Embed"
         width="100%"
         height="600px"
