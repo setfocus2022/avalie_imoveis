@@ -21,7 +21,7 @@ const Dashboard = () => {
             <center>
               <iframe
                 title="Graficos"
-                width="1090"
+                width="900"
                 height="536"
                 src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
                 frameBorder="0"
@@ -48,9 +48,9 @@ const Dashboard = () => {
         setContent(
           <iframe
             title="OS"
-            width="1090"
+            width="900"
             height="550"
-            src="https://analytics.zoho.com/open-view/2737732000000052268"
+            src="https://docs.google.com/spreadsheets/d/1A__5WacsvBT4hsyCHvaeg4RkWbu4sp55hIa3oFyB8uY/edit"
             frameBorder="0"
             allowFullScreen
           ></iframe>
@@ -175,7 +175,7 @@ const Dashboard = () => {
                   style={{ width: '50px', height: '50px' }}
                 />
                 <BootstrapCard.Title as="h4" style={{ fontSize: '15px', marginLeft: '10px' }}>
-                  <a href="https://analytics.zoho.com/open-view/2737732000000052268" target="_blank">
+                  <a href="https://docs.google.com/spreadsheets/d/1A__5WacsvBT4hsyCHvaeg4RkWbu4sp55hIa3oFyB8uY/edit" target="_blank">
                     Visualizar OS em Excel
                   </a>
                 </BootstrapCard.Title>

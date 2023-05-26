@@ -16,12 +16,9 @@
 
 */
 import Dashboard from "views/Dashboard.js";
-import UserProfile from "views/UserProfile.js";
+import Treinamentos from "views/Treinamentos.js";
 import TableList from "views/TableList.js";
-import Typography from "views/Typography.js";
-import Icons from "views/Icons.js";
 import Maps from "views/Maps.js";
-import Notifications from "views/Notifications.js";
 import Grafico from "views/Grafico.js";
 import Certificados from "views/Certificados.js";
 import Catalogo from "views/Catalogo.js";
@@ -44,10 +41,10 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
-    path: "/user",
-    name: "Perfil de Usuário",
+    path: "/treinamentos",
+    name: "Treinamentos",
     icon: "nc-icon nc-circle-09",
-    component: UserProfile,
+    component: Treinamentos,
     layout: "/admin"
   },
   {
