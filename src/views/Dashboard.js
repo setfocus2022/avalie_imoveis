@@ -44,18 +44,6 @@ const Dashboard = () => {
           ></iframe>
         );
         break;
-      case 'visualizarOS':
-        setContent(
-          <iframe
-            title="OS"
-            width="900"
-            height="550"
-            src="https://docs.google.com/spreadsheets/d/1A__5WacsvBT4hsyCHvaeg4RkWbu4sp55hIa3oFyB8uY/edit"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
-        );
-        break;
       case 'eSocial':
         setContent(
           <iframe
@@ -162,42 +150,6 @@ const Dashboard = () => {
             </BootstrapCard.Footer>
           </BootstrapCard>
         </Col>
-
-
-
-        <Col lg="2" sm="2" className="text-center">
-          <BootstrapCard className="card-stats">
-            <BootstrapCard.Body>
-              <div className="d-flex align-items-center justify-content-center">
-                <img
-                  src="https://imgur.com/kfgY9L8.png"
-                  alt="Ícone"
-                  style={{ width: '50px', height: '50px' }}
-                />
-                <BootstrapCard.Title as="h4" style={{ fontSize: '15px', marginLeft: '10px' }}>
-                  <a href="https://docs.google.com/spreadsheets/d/1A__5WacsvBT4hsyCHvaeg4RkWbu4sp55hIa3oFyB8uY/edit" target="_blank">
-                    Visualizar OS em Excel
-                  </a>
-                </BootstrapCard.Title>
-              </div>
-            </BootstrapCard.Body>
-            <BootstrapCard.Footer>
-              <hr />
-              <div className="stats">
-                {isExpanded ? (
-                  <button className="btn btn-link" onClick={handleCloseClick}>
-                    <span className="ml-1">Fechar</span>
-                  </button>
-                ) : (
-                  <button className="btn btn-link" onClick={() => handleOpenClick('visualizarOS')}>
-                    <span className="ml-1">Abrir</span>
-                  </button>
-                )}
-              </div>
-            </BootstrapCard.Footer>
-          </BootstrapCard>
-        </Col>
-
 
         <Col lg="2" sm="2" className="text-center">
           <BootstrapCard className="card-stats">
