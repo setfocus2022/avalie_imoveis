@@ -6,7 +6,7 @@ import Maps from "views/Maps.js";
 import Grafico from "views/Grafico.js";
 import Certificados from "views/Certificados.js";
 import Catalogo from "views/Catalogo.js";
-
+import Resultados from "views/Resultados.js";
 
 const dashboardRoutes = [
   {
@@ -22,6 +22,13 @@ const dashboardRoutes = [
     name: "Graficos Power BI",
     icon: "nc-icon nc-chart-bar-32",
     component: Grafico,
+    layout: "/admin"
+  },
+  {
+    path: "/Resultados",
+    name: "Resultados",
+    icon: "nc-icon nc-paper-2",
+    component: Resultados,
     layout: "/admin"
   },
   {
