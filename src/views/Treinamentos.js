@@ -7,7 +7,7 @@ const Dashboard = () => {
   const [content, setContent] = useState(null);
 
   useEffect(() => {
-    handleOpenClick('verGraficos');
+    handleOpenClick('Avaliação');
   }, []);
 
   const handleOpenClick = (contentType) => {
@@ -15,17 +15,76 @@ const Dashboard = () => {
 
     // Define o conteúdo da coluna expandida com base no tipo de conteúdo
     switch (contentType) {
-      case 'verGraficos':
+      case 'Avaliação':
         setContent(
           <div>
             <center>
-              
+              <iframe
+                title="Avaliação"
+                width="900"
+                height="536"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
             </center>
-            
+            <p>Conteúdo específico para Ver Gráficos</p>
           </div>
         );
         break;
-      default:
+      
+        case 'ListaPresença':
+        setContent(
+          <div>
+            <center>
+              <iframe
+                title="ListaPresença"
+                width="900"
+                height="536"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </center>
+            <p>Conteúdo específico para Ver Gráficos</p>
+          </div>
+        );
+        break;
+        case 'Certificados':
+        setContent(
+          <div>
+            <center>
+              <iframe
+                title="Certificados"
+                width="900"
+                height="536"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </center>
+            <p>Conteúdo específico para Ver Gráficos</p>
+          </div>
+        );
+        break;
+        case 'Protocolo':
+        setContent(
+          <div>
+            <center>
+              <iframe
+                title="Protocolo"
+                width="900"
+                height="536"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </center>
+            <p>Conteúdo específico para Ver Gráficos</p>
+          </div>
+        );
+        break;
+        default:
         setContent(null);
         break;
     }
@@ -62,7 +121,7 @@ const Dashboard = () => {
                     <span className="ml-1">Fechar</span>
                   </button>
                 ) : (
-                  <button className="btn btn-link" onClick={() => handleOpenClick('verGraficos')}>
+                  <button className="btn btn-link" onClick={() => handleOpenClick('Avaliação')}>
                     <span className="ml-1">Abrir</span>
                   </button>
                 )}
@@ -93,7 +152,7 @@ const Dashboard = () => {
                     <span className="ml-1">Fechar</span>
                   </button>
                 ) : (
-                  <button className="btn btn-link" onClick={() => handleOpenClick('verGraficos')}>
+                  <button className="btn btn-link" onClick={() => handleOpenClick('ListaPresença')}>
                     <span className="ml-1">Abrir</span>
                   </button>
                 )}
@@ -124,7 +183,7 @@ const Dashboard = () => {
                     <span className="ml-1">Fechar</span>
                   </button>
                 ) : (
-                  <button className="btn btn-link" onClick={() => handleOpenClick('verGraficos')}>
+                  <button className="btn btn-link" onClick={() => handleOpenClick('Certificados')}>
                     <span className="ml-1">Abrir</span>
                   </button>
                 )}
@@ -155,7 +214,7 @@ const Dashboard = () => {
                     <span className="ml-1">Fechar</span>
                   </button>
                 ) : (
-                  <button className="btn btn-link" onClick={() => handleOpenClick('verGraficos')}>
+                  <button className="btn btn-link" onClick={() => handleOpenClick('Protocolo')}>
                     <span className="ml-1">Abrir</span>
                   </button>
                 )}
