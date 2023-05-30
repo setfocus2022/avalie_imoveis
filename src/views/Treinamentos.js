@@ -23,7 +23,7 @@ const Dashboard = () => {
                 title="Avaliação"
                 width="900"
                 height="536"
-                src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                src="https://forms.zohopublic.com/bauruqualityseg/form/AvaliaodoTreinamentoInstrutor/formperma/qzaqds9xz8ruMy-PP8opfZQWIT3BHxUItERCUy15SXo"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
@@ -41,7 +41,7 @@ const Dashboard = () => {
                 title="ListaPresença"
                 width="900"
                 height="536"
-                src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                src="https://forms.zohopublic.com/esocial/form/ListadePresena/formperma/afAultrJQ_AupYfAIET3OTv8DEI_aeZXVK_55qllics"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
@@ -80,7 +80,7 @@ const Dashboard = () => {
                 allowFullScreen
               ></iframe>
             </center>
-            <p>Conteúdo específico para Ver Gráficos</p>
+            <p> Links para preenchimento de check list  </p>
           </div>
         );
         break;
