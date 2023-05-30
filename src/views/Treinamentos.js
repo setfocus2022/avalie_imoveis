@@ -80,7 +80,7 @@ const Dashboard = () => {
                 allowFullScreen
               ></iframe>
             </center>
-            <p>Conteúdo específico para Ver Gráficos</p>
+            <p> Links para preenchimento de check list  </p>
           </div>
         );
         break;
