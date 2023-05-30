@@ -109,7 +109,7 @@ const Dashboard = () => {
                   style={{ width: '50px', height: '50px', marginRight: '10px' }}
                 />
                 <BootstrapCard.Title as="h4" style={{ fontSize: '15px' }}>
-                  Avaliação
+                <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">Avaliação</a>
                 </BootstrapCard.Title>
               </div>
             </BootstrapCard.Body>
@@ -140,7 +140,7 @@ const Dashboard = () => {
                   style={{ width: '50px', height: '50px', marginRight: '10px' }}
                 />
                 <BootstrapCard.Title as="h4" style={{ fontSize: '15px' }}>
-                  Lista de Presença
+                <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">Lista de Presença</a>
                 </BootstrapCard.Title>
               </div>
             </BootstrapCard.Body>
@@ -171,7 +171,7 @@ const Dashboard = () => {
                   style={{ width: '50px', height: '50px', marginRight: '10px' }}
                 />
                 <BootstrapCard.Title as="h4" style={{ fontSize: '15px' }}>
-                  Certificado
+                <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">Certificado</a>
                 </BootstrapCard.Title>
               </div>
             </BootstrapCard.Body>
@@ -202,7 +202,7 @@ const Dashboard = () => {
                   style={{ width: '50px', height: '50px', marginRight: '10px' }}
                 />
                 <BootstrapCard.Title as="h4" style={{ fontSize: '15px' }}>
-                  Protocolo
+                <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">Protocolo</a>
                 </BootstrapCard.Title>
               </div>
             </BootstrapCard.Body>
