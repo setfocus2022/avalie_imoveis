@@ -67,7 +67,7 @@ function Header() {
             </Nav.Item>
           </Nav>
 
-          // Div com o elemento que chama o nome da pagina no painel.
+          
 
           <div className="d-flex justify-content-center align-items-center ml-2 ml-lg-0">
             <Button
