@@ -84,12 +84,16 @@ const Catalogo = () => {
       console.error('Erro ao criar preferência de checkout:', error);
     }
   };
-    return (
-      <Container>
-        <Button onClick={handleDownload} className="primary" style={{ backgroundColor: '#1A6F45' }}>
-          Baixar Catálogo Atualizado
-        </Button>
-        <div className={styles.searchContainer}>
+  
+  
+
+  return (
+    <Container>
+      <Button onClick={handleDownload} className="primary" style={{ backgroundColor: '#1A6F45' }}>
+        Baixar Catálogo Atualizado
+      </Button>
+
+      <div className={styles.searchContainer}>
         <div className={styles['search-bar']}>
           <input
             type="text"
@@ -144,6 +148,7 @@ const Catalogo = () => {
                   <span className="select-course-text">Selecione o curso</span>
                 )}
               </Button>
+
               {isSelected && (
                 <div className={styles.quantityOption}>
                   <label htmlFor={`quantity-${curso.id}`}>Quantidade:</label>
@@ -170,6 +175,7 @@ const Catalogo = () => {
           {selectedCourses.reduce((total, curso) => total + curso.quantidade, 0)}
         </Badge>
       </Button>
+
       <div id="checkout-container"></div>
     </Container>
   );
