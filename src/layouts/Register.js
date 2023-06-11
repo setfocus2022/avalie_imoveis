@@ -13,7 +13,7 @@ function Register() {
     const user = {email, senha};
 
     try {
-      const response = await axios.post('http://localhost:5000/register', user);
+      const response = await axios.post('https://wild-cyan-elephant-suit.cyclic.app/register', user);
       console.log(response.data);
     } catch (error) {
       console.error(error);
