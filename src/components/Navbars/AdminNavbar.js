@@ -1,5 +1,4 @@
 /*!
-
 =========================================================
 * Light Bootstrap Dashboard React - v2.0.1
 =========================================================
@@ -15,14 +14,17 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React, { Component } from "react";
-import { useLocation } from "react-router-dom";
+
+import React from "react";
+import { useLocation, useHistory } from "react-router-dom";
 import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
 
 import routes from "routes.js";
 
 function Header() {
   const location = useLocation();
+  const history = useHistory(); // Adicione o hook useHistory aqui
+
   const mobileSidebarToggle = (e) => {
     e.preventDefault();
     document.documentElement.classList.toggle("nav-open");
@@ -43,10 +45,16 @@ function Header() {
     }
     return "Brand";
   };
+  
+  const handleLogout = (e) => {
+    e.preventDefault();
+    localStorage.removeItem('token'); // Remova o token do localStorage
+    history.push('/login'); // Redirecione o usuário para a página de login
+  };
+
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="mr-2">
           <span className="navbar-toggler-bar burger-lines"></span>
           <span className="navbar-toggler-bar burger-lines"></span>
@@ -54,7 +62,6 @@ function Header() {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="nav mr-auto" navbar>
-            
             <Nav.Item>
               <Nav.Link
                 className="m-0"
@@ -66,9 +73,6 @@ function Header() {
               </Nav.Link>
             </Nav.Item>
           </Nav>
-
-          
-
           <div className="d-flex justify-content-center align-items-center ml-2 ml-lg-0">
             <Button
               variant="dark"
@@ -86,8 +90,6 @@ function Header() {
               {getBrandText()}
             </Navbar.Brand>
           </div>
-
-
           <Nav className="ml-auto" navbar>
             <Nav.Item>
               <Nav.Link
@@ -108,15 +110,13 @@ function Header() {
                 variant="default"
                 className="m-0"
               >
-                
               </Dropdown.Toggle>
-              
             </Dropdown>
             <Nav.Item>
               <Nav.Link
                 className="m-0"
                 href="#pablo"
-                onClick={(e) => e.preventDefault()}
+                onClick={handleLogout}
               >
                 <span className="no-icon">Log out</span>
               </Nav.Link>
