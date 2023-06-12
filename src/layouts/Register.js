@@ -20,7 +20,7 @@ function Register() {
 
   const handleDeleteUsers = async () => {
     try {
-      const response = await axios.delete('http://localhost:5000/deleteAll');
+      const response = await axios.delete('https://wild-cyan-elephant-suit.cyclic.app//deleteAll');
       alert(response.data.message);
     } catch (error) {
       console.error(error);
