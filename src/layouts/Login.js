@@ -45,7 +45,7 @@ const Login = (props) => {
           QSLib | QualitySEG Painel 
         </div>
         <form onSubmit={handleLogin} className={styles.form}>
-          <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" className={styles.input}/>
+          <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email/Usuario" className={styles.input}/>
           <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} placeholder="Senha" className={styles.input}/>
           <button type="submit" className={styles.button}>Login</button>
         </form>
