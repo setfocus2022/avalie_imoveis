@@ -2,7 +2,6 @@ const express = require('express');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const mysql = require('mysql');
-const mercadopago = require('mercadopago');
 
 const app = express();
 
@@ -22,7 +21,6 @@ db.getConnection((err, connection) => {
 
 app.use(cors());
 app.use(express.json());
-
 
 app.post('/login', (req, res) => {
   const { usuario, senha } = req.body;
@@ -46,7 +44,7 @@ app.post('/login', (req, res) => {
     
     const token = jwt.sign({ id: user.id }, 'suus02201998##', { expiresIn: '1h' });
     res.cookie('token', token, { httpOnly: true });
-    
+
     // inclua o nome do usuário na resposta
     res.send({ success: true, username: user.usuario, token });
     
@@ -69,7 +67,6 @@ app.delete('/deleteAll', (req, res) => {
   });
 });
 
-
 app.post('/register', (req, res) => {
   const { usuario, senha } = req.body;
 
@@ -84,7 +81,6 @@ app.post('/register', (req, res) => {
     res.send({ success: true });
   });
 });
-
 
 const port = process.env.PORT || 5000;
 

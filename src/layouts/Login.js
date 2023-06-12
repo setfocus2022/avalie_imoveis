@@ -29,12 +29,15 @@ const Login = (props) => {
     .then(response => {
       if (response.data.success) {
         localStorage.setItem('token', response.data.token);
+        localStorage.setItem('username', usuario); // Adicione esta linha
         props.history.push('/admin/dashboard');
       } else {
         alert('Login falhou');
       }
     });
   };
+  
+
   
   return (
     <div className={styles.container} style={{backgroundImage: `url(${images[backgroundIndex]})`}}>
