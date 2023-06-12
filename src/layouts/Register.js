@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import axios from 'axios';
 
 function Register() {
-  const [email, setEmail] = useState("");
+  const [usuario, setUsuario] = useState("");
   const [senha, setSenha] = useState("");
 
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    const user = {email, senha};
+    const user = {usuario, senha};
 
     try {
-      const response = await axios.post('http://localhost:5000/register', user);
+      const response = await axios.post('https://wild-cyan-elephant-suit.cyclic.app/register', user);
       console.log(response.data);
     } catch (error) {
       console.error(error);
@@ -26,16 +26,16 @@ function Register() {
       console.error(error);
     }
   }
-  
+
   return (
     <div className="register-wrapper">
       <form onSubmit={handleRegister}>
         <label>
-          Email:
-          <input type="email" value={email} onChange={e => setEmail(e.target.value)} />
+          Usuário:
+          <input type="text" value={usuario} onChange={e => setUsuario(e.target.value)} />
         </label>
         <label>
-          senha:
+          Senha:
           <input type="password" value={senha} onChange={e => setSenha(e.target.value)} />
         </label>
         <input type="submit" value="Register" />

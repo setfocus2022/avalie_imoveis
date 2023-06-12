@@ -9,7 +9,7 @@ import icon from './icone.png'; // Importando o icone
 const images = [backgroundImage1, backgroundImage2, backgroundImage3];
 
 const Login = (props) => {
-  const [email, setEmail] = useState("");
+  const [usuario, setUsuario] = useState("");
   const [senha, setSenha] = useState("");
   const [backgroundIndex, setBackgroundIndex] = useState(0);
 
@@ -25,8 +25,7 @@ const Login = (props) => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    axios.post('https://wild-cyan-elephant-suit.cyclic.app/login', { email, senha })
-
+    axios.post('https://wild-cyan-elephant-suit.cyclic.app/login', { usuario, senha })
     .then(response => {
       if (response.data.success) {
         localStorage.setItem('token', response.data.token);
@@ -45,7 +44,7 @@ const Login = (props) => {
           QSLib | QualitySEG Painel 
         </div>
         <form onSubmit={handleLogin} className={styles.form}>
-          <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email/Usuario" className={styles.input}/>
+          <input type="text" value={usuario} onChange={(e) => setUsuario(e.target.value)} placeholder="Usuário" className={styles.input}/>
           <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} placeholder="Senha" className={styles.input}/>
           <button type="submit" className={styles.button}>Login</button>
         </form>
