@@ -1,29 +1,20 @@
-/*!
-=========================================================
-* Light Bootstrap Dashboard React - v2.0.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useLocation, useHistory } from "react-router-dom";
 import { Navbar, Container, Nav, Dropdown, Button } from "react-bootstrap";
-
 import routes from "routes.js";
+import axios from "axios";
 
 function Header() {
   const location = useLocation();
-  const history = useHistory(); // Adicione o hook useHistory aqui
+  const history = useHistory();
+  const [username, setUsername] = useState("");
+
+  useEffect(() => {
+    const savedUsername = localStorage.getItem("username");
+    if (savedUsername) {
+      setUsername(savedUsername);
+    }
+  }, []);
 
   const mobileSidebarToggle = (e) => {
     e.preventDefault();
@@ -49,6 +40,8 @@ function Header() {
   const handleLogout = (e) => {
     e.preventDefault();
     localStorage.removeItem('token'); // Remova o token do localStorage
+    localStorage.removeItem('username'); // Remova o nome do usuário do localStorage
+    setUsername(""); // Limpe o estado do nome do usuário
     history.push('/login'); // Redirecione o usuário para a página de login
   };
 
@@ -91,15 +84,6 @@ function Header() {
             </Navbar.Brand>
           </div>
           <Nav className="ml-auto" navbar>
-            <Nav.Item>
-              <Nav.Link
-                className="m-0"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
-              >
-                <span className="no-icon">Conta</span>
-              </Nav.Link>
-            </Nav.Item>
             <Dropdown as={Nav.Item}>
               <Dropdown.Toggle
                 aria-expanded={false}
@@ -110,7 +94,18 @@ function Header() {
                 variant="default"
                 className="m-0"
               >
+                Conta
               </Dropdown.Toggle>
+              <Dropdown.Menu align="right">
+                <Dropdown.Item href="#" onClick={(e) => e.preventDefault()}>
+                  <img
+                    src="https://imgur.com/bKBzhbN.png"
+                    alt="User"
+                    style={{ width: '25px', height: '25px', borderRadius: '50%', marginRight: '10px' }}
+                  />
+                  <span style={{ fontSize: '20px', fontWeight: 'bold' }}>{username}</span>
+                </Dropdown.Item>
+              </Dropdown.Menu>
             </Dropdown>
             <Nav.Item>
               <Nav.Link

@@ -43,11 +43,13 @@ app.post('/login', (req, res) => {
     if (senha !== user.senha) {
       return res.send({ success: false, message: 'Wrong password' });
     }
-
+    
     const token = jwt.sign({ id: user.id }, 'suus02201998##', { expiresIn: '1h' });
     res.cookie('token', token, { httpOnly: true });
-
-    res.send({ success: true });
+    
+    // inclua o nome do usuário na resposta
+    res.send({ success: true, username: user.usuario, token });
+    
   });
 });
 
@@ -83,31 +85,6 @@ app.post('/register', (req, res) => {
   });
 });
 
-
-mercadopago.configure({
-  access_token: 'TEST-2684905602430236-052513-51d07b1caa42a7938ab7e2a9f13a7f98-135153905',
-});
-
-app.post('/create_preference', async (req, res) => {
-  const { title, price, quantity } = req.body;
-
-  const preference = {
-    items: [
-      {
-        title,
-        unit_price: Number(price),
-        quantity: Number(quantity),
-      },
-    ],
-  };
-
-  try {
-    const response = await mercadopago.preferences.create(preference); // Correção aqui
-    res.json({ id: response.body.id });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
 
 const port = process.env.PORT || 5000;
 
