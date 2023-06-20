@@ -7,7 +7,7 @@ const Dashboard = () => {
   const [content, setContent] = useState(null);
 
   useEffect(() => {
-    handleOpenClick('verGraficos');
+    handleOpenClick('verGraficos','verTrello');
   }, []);
 
   const handleOpenClick = (contentType) => {
@@ -15,6 +15,18 @@ const Dashboard = () => {
 
     // Define o conteúdo da coluna expandida com base no tipo de conteúdo
     switch (contentType) {
+      case 'verTrello':
+      setContent(
+        <iframe
+          title="Trello"
+          width="900"
+          height="536"
+          src="https://trello.com/b/0SzjsfiE/ti-comercial"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      );
+      break;
       case 'verGraficos':
         setContent(
           <div>
@@ -290,10 +302,12 @@ const Dashboard = () => {
         
         
         <Row>
-          <Col lg="12" className={`text-center expanded ${isExpanded ? 'show' : ''}`}>
+
+
+          <Col lg="12" className="text-center">
             <BootstrapCard className="card-stats">
               <div className="iframe-container">
-                {isExpanded && content}
+                {content}
               </div>
             </BootstrapCard>
           </Col>

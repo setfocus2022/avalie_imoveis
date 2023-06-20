@@ -25,17 +25,25 @@ const Login = (props) => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    axios.post('https://wild-cyan-elephant-suit.cyclic.app/login', { usuario, senha })
+    axios.post('https://weak-erin-bighorn-sheep-gear.cyclic.app/login', { usuario, senha })
     .then(response => {
+      console.log('Response from server:', response.data); // Log the response from the server
+  
       if (response.data.success) {
         localStorage.setItem('token', response.data.token);
-        localStorage.setItem('username', usuario); // Adicione esta linha
+        localStorage.setItem('username', usuario);
+        localStorage.setItem('role', response.data.role);
+        
+        console.log('Role after login:', localStorage.getItem('role')); // Log the role after login
+  
         props.history.push('/admin/dashboard');
       } else {
         alert('Login falhou');
       }
     });
   };
+  
+  
   
 
   

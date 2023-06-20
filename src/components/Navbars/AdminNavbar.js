@@ -39,7 +39,8 @@ function Header() {
   
   const handleLogout = (e) => {
     e.preventDefault();
-    localStorage.removeItem('token'); // Remova o token do localStorage
+    localStorage.removeItem('role'); // Remova o token do localStorage
+    localStorage.removeItem('token');
     localStorage.removeItem('username'); // Remova o nome do usuário do localStorage
     setUsername(""); // Limpe o estado do nome do usuário
     history.push('/login'); // Redirecione o usuário para a página de login
@@ -67,6 +68,7 @@ function Header() {
             </Nav.Item>
           </Nav>
           <div className="d-flex justify-content-center align-items-center ml-2 ml-lg-0">
+
             <Button
               variant="dark"
               className="d-lg-none btn-fill d-flex justify-content-center align-items-center rounded-circle p-2"
@@ -74,6 +76,7 @@ function Header() {
             >
               <i className="fas fa-ellipsis-v"></i>
             </Button>
+            
             <Navbar.Brand
               href="#home"
               onClick={(e) => e.preventDefault()}

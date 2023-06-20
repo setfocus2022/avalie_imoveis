@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import { useLocation, Route, Switch } from "react-router-dom";
-
+import ErrorPage from "./ErrorPage"; // Adicionado aqui
 import AdminNavbar from "components/Navbars/AdminNavbar";
 import Footer from "components/Footer/Footer";
 import Sidebar from "components/Sidebar/Sidebar";
-
 import routes from "routes.js";
-
 import sidebarImage from "assets/img/sidebar-4.jpg";
+
 
 function Admin() {
   const [image, setImage] = React.useState(sidebarImage);
@@ -17,16 +16,17 @@ function Admin() {
   const mainPanel = React.useRef(null);
 
   const getRoutes = (routes) => {
+    const role = localStorage.getItem('role');
     return routes.map((prop, key) => {
       if (prop.layout === "/admin") {
-        if (prop.submenu) {
-          return prop.submenu.map((subProp, subKey) => (
+        if (prop.roles && !prop.roles.includes(role)) {
+          return (
             <Route
-              path={prop.layout + subProp.path}
-              render={(props) => <subProp.component {...props} />}
-              key={`${key}-${subKey}`}
+              path={prop.layout + prop.path}
+              render={(props) => <ErrorPage {...props} />}  // ErrorPage é um componente que você precisará criar
+              key={key}
             />
-          ));
+          );
         } else {
           return (
             <Route
@@ -59,7 +59,8 @@ function Admin() {
   return (
     <>
       <div className="wrapper">
-        <Sidebar color={color} image={hasImage ? image : ""} routes={routes} />
+      <Sidebar color={color} image={hasImage ? image : ""} routes={routes} role={localStorage.getItem('role')} />
+
         <div className="main-panel" ref={mainPanel}>
           <AdminNavbar />
           <div className="content">

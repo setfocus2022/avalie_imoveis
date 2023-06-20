@@ -1,19 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import { useLocation, NavLink } from "react-router-dom";
 import { Nav } from "react-bootstrap";
 import logo from "../../assets/img/reactlogo.png";
 import sidebarImage from "../../assets/img/sidebar-4.jpg";
 
-
-
 function Sidebar({ color, image, routes }) {
   const location = useLocation();
+  const role = localStorage.getItem('role');
   const activeRoute = (routeName) => {
     return location.pathname.indexOf(routeName) > -1 ? "active" : "";
   };
   return (
     <div className="sidebar" data-image={sidebarImage} data-color={color}>
-
       <div
         className="sidebar-background"
         style={{
@@ -33,29 +31,34 @@ function Sidebar({ color, image, routes }) {
          
         </div>
         <Nav>
-          {routes.map((prop, key) => {
-            if (!prop.redirect)
-              return (
-                <li
-                  className={
-                    prop.upgrade
-                      ? "active active-pro"
-                      : activeRoute(prop.layout + prop.path)
-                  }
-                  key={key}
-                >
-                  <NavLink
-                    to={prop.layout + prop.path}
-                    className="nav-link"
-                    activeClassName="active"
-                  >
-                    <i className={prop.icon} />
-                    <p>{prop.name}</p>
-                  </NavLink>
-                </li>
-              );
+        {routes.map((prop, key) => {
+          // Se o usuário não tem permissão para acessar esta rota, não renderize o item do menu
+          if (prop.roles && !prop.roles.includes(role)) {
             return null;
-          })}
+          }
+          if (!prop.redirect)
+            return (
+              <li
+                className={
+                  prop.upgrade
+                    ? "active active-pro"
+                    : activeRoute(prop.layout + prop.path)
+                }
+                key={key}
+              >
+                <NavLink
+                  to={prop.layout + prop.path}
+                  className="nav-link"
+                  activeClassName="active"
+                >
+                  <i className={prop.icon} />
+                  <p>{prop.name}</p>
+                </NavLink>
+              </li>
+            );
+          return null;
+        })}
+
         </Nav>
       </div>
     </div>
