@@ -7,6 +7,7 @@ import Grafico from "views/Grafico.js";
 import Certificados from "views/Certificados.js";
 import Catalogo from "views/Catalogo.js";
 import Resultados from "views/Resultados.js";
+import Compras from "views/Compras.js";
 
 const dashboardRoutes = [
   {
@@ -75,7 +76,15 @@ const dashboardRoutes = [
     component: Catalogo,
     layout: "/admin",
     roles: ['Administrador', 'Visualizador']
-  }
+  },
+  {
+    path: "/Compras",
+    name: "Pendências de Compras",
+    icon: "nc-icon nc-money-coins",
+    component: Compras,
+    layout: "/admin",
+    roles: ['Administrador', 'Visualizador']
+  },
 ];
 
 
