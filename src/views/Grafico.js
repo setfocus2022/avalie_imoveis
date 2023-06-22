@@ -3,18 +3,29 @@ import { Col, Card as BootstrapCard, Row, Container } from 'react-bootstrap';
 import './styles.dashboard.scss';
 
 const Dashboard = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [content, setContent] = useState(null);
+    const [isExpanded, setIsExpanded] = useState(false);
+    const [content, setContent] = useState(null);
 
   useEffect(() => {
-    handleOpenClick('verGraficos');
+    handleOpenClick('verGraficos','verTrello');
   }, []);
 
   const handleOpenClick = (contentType) => {
-    setIsExpanded(!isExpanded);
-
+    setIsExpanded(true);
     // Define o conteúdo da coluna expandida com base no tipo de conteúdo
     switch (contentType) {
+      case 'verTrello':
+      setContent(
+        <iframe
+          title="Trello"
+          width="900"
+          height="536"
+          src="https://trello.com/b/0SzjsfiE/ti-comercial"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      );
+      break;
       case 'verGraficos':
         setContent(
           <div>
@@ -39,18 +50,6 @@ const Dashboard = () => {
             width="900"
             height="536"
             src="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
-        );
-        break;
-      case 'visualizarOS':
-        setContent(
-          <iframe
-            title="OS"
-            width="900"
-            height="550"
-            src="https://docs.google.com/spreadsheets/d/1A__5WacsvBT4hsyCHvaeg4RkWbu4sp55hIa3oFyB8uY/edit"
             frameBorder="0"
             allowFullScreen
           ></iframe>
@@ -121,19 +120,21 @@ const Dashboard = () => {
     }
   };
 
-  const handleCloseClick = () => {
-    setIsExpanded(false);
-    setContent(null);
+  const handleCardClick = (contentType) => () => {
+    handleOpenClick(contentType);
   };
 
   return (
     <>
       <Container fluid>
         <Row>
-        <Col lg="2" sm="2" className="text-center">
-          <BootstrapCard className="card-stats">
+        <Col lg="2" sm="2" className="text-center mx-auto">
+          <BootstrapCard 
+            className="card-stats card-btn"
+            onClick={handleCardClick('realizarOS')}
+          >
             <BootstrapCard.Body>
-              <div className="d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center justify-content-center" style={{ marginBottom: '15px' }}>
                 <img
                   src="https://imgur.com/AtpGO1b.png"
                   alt="Ícone"
@@ -146,27 +147,16 @@ const Dashboard = () => {
                 </BootstrapCard.Title>
               </div>
             </BootstrapCard.Body>
-            <BootstrapCard.Footer>
-              <hr />
-              <div className="stats">
-                {isExpanded ? (
-                  <button className="btn btn-link" onClick={handleCloseClick}>
-                    <span className="ml-1">Fechar</span>
-                  </button>
-                ) : (
-                  <button className="btn btn-link" onClick={() => handleOpenClick('realizarOS')}>
-                    <span className="ml-1">Abrir</span>
-                  </button>
-                )}
-              </div>
-            </BootstrapCard.Footer>
           </BootstrapCard>
         </Col>
 
-        <Col lg="2" sm="2" className="text-center">
-          <BootstrapCard className="card-stats">
+        <Col lg="2" sm="2" className="text-center mx-auto">
+          <BootstrapCard 
+            className="card-stats card-btn"
+            onClick={handleCardClick('eSocial')}
+          >
             <BootstrapCard.Body>
-              <div className="d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center justify-content-center" style={{ marginBottom: '15px' }}>
                 <img
                   src="https://imgur.com/819yZlS.png"
                   alt="Ícone"
@@ -179,27 +169,17 @@ const Dashboard = () => {
                 </BootstrapCard.Title>
               </div>
             </BootstrapCard.Body>
-            <BootstrapCard.Footer>
-              <hr />
-              <div className="stats">
-                {isExpanded ? (
-                  <button className="btn btn-link" onClick={handleCloseClick}>
-                    <span className="ml-1">Fechar</span>
-                  </button>
-                ) : (
-                  <button className="btn btn-link" onClick={() => handleOpenClick('eSocial')}>
-                    <span className="ml-1">Abrir</span>
-                  </button>
-                )}
-              </div>
-            </BootstrapCard.Footer>
           </BootstrapCard>
         </Col>
 
-        <Col lg="2" sm="2" className="text-center">
-          <BootstrapCard className="card-stats">
+        
+        <Col lg="2" sm="2" className="text-center mx-auto">
+          <BootstrapCard 
+            className="card-stats card-btn"
+            onClick={handleCardClick('PGR')}
+          >
             <BootstrapCard.Body>
-              <div className="d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center justify-content-center" style={{ marginBottom: '15px' }}>
                 <img
                   src="https://imgur.com/IhU0nyh.png"
                   alt="Ícone"
@@ -212,27 +192,16 @@ const Dashboard = () => {
                 </BootstrapCard.Title>
               </div>
             </BootstrapCard.Body>
-            <BootstrapCard.Footer>
-              <hr />
-              <div className="stats">
-                {isExpanded ? (
-                  <button className="btn btn-link" onClick={handleCloseClick}>
-                    <span className="ml-1">Fechar</span>
-                  </button>
-                ) : (
-                  <button className="btn btn-link" onClick={() => handleOpenClick('PGR')}>
-                    <span className="ml-1">Abrir</span>
-                  </button>
-                )}
-              </div>
-            </BootstrapCard.Footer>
           </BootstrapCard>
         </Col>
 
-        <Col lg="2" sm="2" className="text-center">
-          <BootstrapCard className="card-stats">
+        <Col lg="2" sm="2" className="text-center mx-auto">
+          <BootstrapCard 
+            className="card-stats card-btn"
+            onClick={handleCardClick('CAT')}
+          >
             <BootstrapCard.Body>
-              <div className="d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center justify-content-center" style={{ marginBottom: '15px' }}>
                 <img
                   src="https://imgur.com/Oe4JExc.png"
                   alt="Ícone"
@@ -245,27 +214,16 @@ const Dashboard = () => {
                 </BootstrapCard.Title>
               </div>
             </BootstrapCard.Body>
-            <BootstrapCard.Footer>
-              <hr />
-              <div className="stats">
-                {isExpanded ? (
-                  <button className="btn btn-link" onClick={handleCloseClick}>
-                    <span className="ml-1">Fechar</span>
-                  </button>
-                ) : (
-                  <button className="btn btn-link" onClick={() => handleOpenClick('CAT')}>
-                    <span className="ml-1">Abrir</span>
-                  </button>
-                )}
-              </div>
-            </BootstrapCard.Footer>
           </BootstrapCard>
         </Col>
 
-        <Col lg="2" sm="2" className="text-center">
-          <BootstrapCard className="card-stats">
+        <Col lg="2" sm="2" className="text-center mx-auto">
+          <BootstrapCard 
+            className="card-stats card-btn"
+            onClick={handleCardClick('PPP')}
+          >
             <BootstrapCard.Body>
-              <div className="d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center justify-content-center" style={{ marginBottom: '15px' }}>
                 <img
                   src="https://imgur.com/ZgAFGkP.png"
                   alt="Ícone"
@@ -278,31 +236,16 @@ const Dashboard = () => {
                 </BootstrapCard.Title>
               </div>
             </BootstrapCard.Body>
-            <BootstrapCard.Footer>
-              <hr />
-              <div className="stats">
-                {isExpanded ? (
-                  <button className="btn btn-link" onClick={handleCloseClick}>
-                    <span className="ml-1">Fechar</span>
-                  </button>
-                ) : (
-                  <button className="btn btn-link" onClick={() => handleOpenClick('PPP')}>
-                    <span className="ml-1">Abrir</span>
-                  </button>
-                )}
-              </div>
-            </BootstrapCard.Footer>
           </BootstrapCard>
         </Col>
-          {/* Restante das colunas omitidas por brevidade */}
-        </Row>
-        <Row>
-          {/* Restante das colunas omitidas por brevidade */}
+
         </Row>
         
         
         <Row>
-          <Col lg="12" className={`text-center expanded ${isExpanded ? 'show' : ''}`}>
+
+
+        <Col lg="12" className={`text-center expanded ${isExpanded ? 'show' : ''}`}>
             <BootstrapCard className="card-stats">
               <div className="iframe-container">
                 {isExpanded && content}
@@ -314,5 +257,4 @@ const Dashboard = () => {
     </>
   );
 };
-
 export default Dashboard;

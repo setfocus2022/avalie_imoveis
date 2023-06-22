@@ -89,8 +89,6 @@ const Compras = () => {
             </BootstrapCard.Body>
           </BootstrapCard>
         </Col>
-
-
         </Row>
        
         

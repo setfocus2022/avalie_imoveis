@@ -90,143 +90,100 @@ const Dashboard = () => {
     }
   };
 
-  const handleCloseClick = () => {
-    setIsExpanded(false);
-    setContent(null);
+  const handleCardClick = (contentType) => () => {
+    handleOpenClick(contentType);
   };
 
   return (
     <>
       <Container fluid>
         <Row>
-        <Col lg="2" sm="2" className="text-center">
-          <BootstrapCard className="card-stats">
+         <Col lg="2" sm="2" className="text-center mx-auto">
+          <BootstrapCard 
+            className="card-stats card-btn"
+            onClick={handleCardClick('Avaliação')}
+          >
             <BootstrapCard.Body>
-              <div className="d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center justify-content-center" style={{ marginBottom: '15px' }}>
                 <img
                   src="https://imgur.com/fOHHIWC.png"
                   alt="Ícone"
-                  style={{ width: '50px', height: '50px', marginRight: '10px' }}
+                  style={{ width: '50px', height: '50px' }}
                 />
-                <BootstrapCard.Title as="h4" style={{ fontSize: '15px' }}>
-                <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">Avaliação</a>
-                </BootstrapCard.Title>
+                <BootstrapCard.Title as="h4" style={{ fontSize: '15px', marginLeft: '10px' }}>
+                  <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">Avaliação</a>
+                  </BootstrapCard.Title>
               </div>
             </BootstrapCard.Body>
-            <BootstrapCard.Footer>
-              <hr />
-              <div className="stats">
-                {isExpanded ? (
-                  <button className="btn btn-link" onClick={handleCloseClick}>
-                    <span className="ml-1">Fechar</span>
-                  </button>
-                ) : (
-                  <button className="btn btn-link" onClick={() => handleOpenClick('Avaliação')}>
-                    <span className="ml-1">Abrir</span>
-                  </button>
-                )}
-              </div>
-            </BootstrapCard.Footer>
           </BootstrapCard>
         </Col>
 
-        <Col lg="2" sm="2" className="text-center">
-          <BootstrapCard className="card-stats">
+        <Col lg="2" sm="2" className="text-center mx-auto">
+          <BootstrapCard 
+            className="card-stats card-btn"
+            onClick={handleCardClick('ListaPresença')}
+          >
             <BootstrapCard.Body>
-              <div className="d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center justify-content-center" style={{ marginBottom: '15px' }}>
                 <img
                   src="https://imgur.com/j0KMEj9.png"
                   alt="Ícone"
-                  style={{ width: '50px', height: '50px', marginRight: '10px' }}
+                  style={{ width: '50px', height: '50px' }}
                 />
-                <BootstrapCard.Title as="h4" style={{ fontSize: '15px' }}>
-                <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">Lista de Presença</a>
+                <BootstrapCard.Title as="h4" style={{ fontSize: '15px', marginLeft: '10px' }}>
+                  <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">
+                    Lista de Presença
+                  </a>
                 </BootstrapCard.Title>
               </div>
             </BootstrapCard.Body>
-            <BootstrapCard.Footer>
-              <hr />
-              <div className="stats">
-                {isExpanded ? (
-                  <button className="btn btn-link" onClick={handleCloseClick}>
-                    <span className="ml-1">Fechar</span>
-                  </button>
-                ) : (
-                  <button className="btn btn-link" onClick={() => handleOpenClick('ListaPresença')}>
-                    <span className="ml-1">Abrir</span>
-                  </button>
-                )}
-              </div>
-            </BootstrapCard.Footer>
           </BootstrapCard>
         </Col>
 
-        <Col lg="2" sm="2" className="text-center">
-          <BootstrapCard className="card-stats">
+        <Col lg="2" sm="2" className="text-center mx-auto">
+          <BootstrapCard 
+            className="card-stats card-btn"
+            onClick={handleCardClick('Certificados')}
+          >
             <BootstrapCard.Body>
-              <div className="d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center justify-content-center" style={{ marginBottom: '15px' }}>
                 <img
                   src="https://imgur.com/MyO5N40.png"
                   alt="Ícone"
-                  style={{ width: '50px', height: '50px', marginRight: '10px' }}
+                  style={{ width: '50px', height: '50px' }}
                 />
-                <BootstrapCard.Title as="h4" style={{ fontSize: '15px' }}>
-                <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">Certificado</a>
+                <BootstrapCard.Title as="h4" style={{ fontSize: '15px', marginLeft: '10px' }}>
+                  <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">
+                    Certificados
+                  </a>
                 </BootstrapCard.Title>
               </div>
             </BootstrapCard.Body>
-            <BootstrapCard.Footer>
-              <hr />
-              <div className="stats">
-                {isExpanded ? (
-                  <button className="btn btn-link" onClick={handleCloseClick}>
-                    <span className="ml-1">Fechar</span>
-                  </button>
-                ) : (
-                  <button className="btn btn-link" onClick={() => handleOpenClick('Certificados')}>
-                    <span className="ml-1">Abrir</span>
-                  </button>
-                )}
-              </div>
-            </BootstrapCard.Footer>
           </BootstrapCard>
         </Col>
 
-        <Col lg="2" sm="2" className="text-center">
-          <BootstrapCard className="card-stats">
+        <Col lg="2" sm="2" className="text-center mx-auto">
+          <BootstrapCard 
+            className="card-stats card-btn"
+            onClick={handleCardClick('Protocolo')}
+          >
             <BootstrapCard.Body>
-              <div className="d-flex align-items-center justify-content-center">
+              <div className="d-flex align-items-center justify-content-center" style={{ marginBottom: '15px' }}>
                 <img
                   src="https://imgur.com/kapSCA4.png"
                   alt="Ícone"
-                  style={{ width: '50px', height: '50px', marginRight: '10px' }}
+                  style={{ width: '50px', height: '50px' }}
                 />
-                <BootstrapCard.Title as="h4" style={{ fontSize: '15px' }}>
-                <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">Protocolo</a>
+                <BootstrapCard.Title as="h4" style={{ fontSize: '15px', marginLeft: '10px' }}>
+                  <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">
+                    Protocolo
+                  </a>
                 </BootstrapCard.Title>
               </div>
             </BootstrapCard.Body>
-            <BootstrapCard.Footer>
-              <hr />
-              <div className="stats">
-                {isExpanded ? (
-                  <button className="btn btn-link" onClick={handleCloseClick}>
-                    <span className="ml-1">Fechar</span>
-                  </button>
-                ) : (
-                  <button className="btn btn-link" onClick={() => handleOpenClick('Protocolo')}>
-                    <span className="ml-1">Abrir</span>
-                  </button>
-                )}
-              </div>
-            </BootstrapCard.Footer>
           </BootstrapCard>
         </Col>
-
-          {/* Restante das colunas omitidas por brevidade */}
-        </Row>
-        <Row>
-          {/* Restante das colunas omitidas por brevidade */}
+        
         </Row>
         <Row>
           <Col lg="12" className={`text-center expanded ${isExpanded ? 'show' : ''}`}>
