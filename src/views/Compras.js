@@ -70,7 +70,7 @@ const Compras = () => {
         <Row>
         <Col lg="2" sm="2" className="text-center mx-auto">
           <BootstrapCard 
-            className="card-stats"
+            className="card-stats card-btn"
             onClick={handleCardClick}
           >
             <BootstrapCard.Body>
