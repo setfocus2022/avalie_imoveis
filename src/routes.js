@@ -79,7 +79,7 @@ const dashboardRoutes = [
   },
   {
     path: "/Compras",
-    name: "Pendência de Compra",
+    name: "Pendência Compra",
     icon: "nc-icon nc-money-coins",
     component: Compras,
     layout: "/admin",
