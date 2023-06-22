@@ -25,7 +25,7 @@ function Sidebar({ color, image, routes }) {
             className="simple-text logo-mini mx-1"
           >
             <div>
-              <img src={logo} alt="..." width="80%" />
+              <img src={logo} alt="..." width="100%" />
             </div>
           </a>
          
