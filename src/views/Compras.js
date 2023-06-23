@@ -23,8 +23,8 @@ const Compras = () => {
             <center>
               <iframe
                 title="Graficos"
-                width="900"
-                height="536"
+                width="1024"
+                height="635"
                 src="https://app.powerbi.com/view?r=eyJrIjoiYWJjYTEzYzktZTIwYS00NDE3LWIyYWUtNzkzNmUzMjg2MTJkIiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
                 frameBorder="0"
                 allowFullScreen
