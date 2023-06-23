@@ -81,7 +81,7 @@ const Compras = () => {
                   style={{ width: '50px', height: '50px' }}
                 />
                 <BootstrapCard.Title as="h4" style={{ fontSize: '15px', marginLeft: '10px' }}>
-                  <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">
+                  <a href="https://forms.zohopublic.com/bauruqualityseg/form/PedidodeCompra/formperma/Vv5Pb_9dJ5qTqkjBMl7GSQw3KM2VT058iPNT-EM8mQw" target="_blank">
                     Realizar OS
                   </a>
                 </BootstrapCard.Title>
