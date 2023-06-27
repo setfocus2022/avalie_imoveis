@@ -32,7 +32,7 @@ const BaseConhecimento = () => {
           <p><center>Direcionar e-mails para Pastas Personalizadas no Outlook #qsdicas</center></p>
             <BootstrapCard className="card-stats">
               <div className="iframe-container">
-              <center><iframe width="560" height="315" src="https://www.youtube.com/embed/zgv2hH-2rHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="True"></iframe>
+              <center><iframe width="560" height="315" src="https://www.youtube.com/embed/zgv2hH-2rHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; allowfullscreen" ></iframe>
               </div>
             </BootstrapCard>
           </Col>
