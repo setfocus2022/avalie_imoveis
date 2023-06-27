@@ -8,6 +8,7 @@ import Certificados from "views/Certificados.js";
 import Catalogo from "views/Catalogo.js";
 import Resultados from "views/Resultados.js";
 import Compras from "views/Compras.js";
+import BaseConhecimento from "views/BaseConhecimento.js"
 
 const dashboardRoutes = [
   {
@@ -82,6 +83,14 @@ const dashboardRoutes = [
     name: "Pendência Compra",
     icon: "nc-icon nc-money-coins",
     component: Compras,
+    layout: "/admin",
+    roles: ['Administrador', 'Visualizador']
+  },
+  {
+    path: "/BaseConhecimento",
+    name: "Base de Conhecimento",
+    icon: "nc-icon nc-money-coins",
+    component: BaseConhecimento,
     layout: "/admin",
     roles: ['Administrador', 'Visualizador']
   },
