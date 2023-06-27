@@ -23,9 +23,9 @@ const Compras = () => {
             <center>
               <iframe
                 title="Graficos"
-                width="900"
-                height="536"
-                src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                width="1024"
+                height="635"
+                src="https://app.powerbi.com/view?r=eyJrIjoiYWJjYTEzYzktZTIwYS00NDE3LWIyYWUtNzkzNmUzMjg2MTJkIiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
@@ -40,7 +40,7 @@ const Compras = () => {
             title="OS 20"
             width="900"
             height="536"
-            src="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w"
+            src="https://forms.zohopublic.com/bauruqualityseg/form/PedidodeCompra/formperma/Vv5Pb_9dJ5qTqkjBMl7GSQw3KM2VT058iPNT-EM8mQw"
             frameBorder="0"
             allowFullScreen
           ></iframe>
@@ -81,7 +81,7 @@ const Compras = () => {
                   style={{ width: '50px', height: '50px' }}
                 />
                 <BootstrapCard.Title as="h4" style={{ fontSize: '15px', marginLeft: '10px' }}>
-                  <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">
+                  <a href="https://forms.zohopublic.com/bauruqualityseg/form/PedidodeCompra/formperma/Vv5Pb_9dJ5qTqkjBMl7GSQw3KM2VT058iPNT-EM8mQw" target="_blank">
                     Realizar OS
                   </a>
                 </BootstrapCard.Title>
