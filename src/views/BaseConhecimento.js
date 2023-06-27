@@ -11,7 +11,7 @@ const BaseConhecimento = () => {
           <p><center>TESTE 123</center></p>
             <BootstrapCard className="card-stats">
               <div className="iframe-container">
-              <center><iframe width="560" height="315" src="https://www.youtube.com/embed/QCB01i2ze-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>/center>
+              <center><iframe width="560" height="315" src="https://www.youtube.com/embed/QCB01i2ze-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
               </div>
             </BootstrapCard>
           </Col>
