@@ -88,8 +88,8 @@ const dashboardRoutes = [
   },
   {
     path: "/BaseConhecimento",
-    name: "Base de Conhecimento",
-    icon: "nc-icon nc-money-coins",
+    name: "Base Conhecimento",
+    icon: "nc-icon nc-atom",
     component: BaseConhecimento,
     layout: "/admin",
     roles: ['Administrador', 'Visualizador']
