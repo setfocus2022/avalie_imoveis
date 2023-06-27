@@ -68,7 +68,7 @@ const dashboardRoutes = [
     icon: "nc-icon nc-single-copy-04",
     component: Certificados,
     layout: "/admin",
-    roles: ['Administrador']
+    roles: ['Administrador', 'Financeiro']
   },
   {
     path: "/catalogo_ead",
@@ -84,7 +84,7 @@ const dashboardRoutes = [
     icon: "nc-icon nc-money-coins",
     component: Compras,
     layout: "/admin",
-    roles: ['Administrador', 'Visualizador']
+    roles: ['Administrador', 'Visualizador', 'Financeiro']
   },
   {
     path: "/BaseConhecimento",
@@ -92,7 +92,7 @@ const dashboardRoutes = [
     icon: "nc-icon nc-atom",
     component: BaseConhecimento,
     layout: "/admin",
-    roles: ['Administrador', 'Visualizador']
+    roles: ['Administrador', 'Visualizador', 'Financeiro']
   },
 ];
 

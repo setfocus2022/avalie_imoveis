@@ -98,7 +98,7 @@ function Register() {
               <option value="">Selecione...</option>
               <option value="Administrador">Administrador</option>
               <option value="Visualizador">Visualizador</option>
-              <option value="Teste">Teste</option>
+              <option value="Financeiro">Financeiro</option>
             </select>
           </label>
           <button type="submit" className={styles.button}>Register</button>
