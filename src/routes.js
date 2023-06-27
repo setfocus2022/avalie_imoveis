@@ -17,7 +17,7 @@ const dashboardRoutes = [
     icon: "nc-icon nc-chart-pie-35",
     component: Dashboard,
     layout: "/admin",
-    roles: ['Teste', 'Administrador', 'Visualizador']
+    roles: ['Financeiro', 'Administrador', 'Visualizador']
   },
 
   {
