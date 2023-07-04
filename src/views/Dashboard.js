@@ -39,7 +39,7 @@ const Dashboard = () => {
                 allowFullScreen
               ></iframe>
             </center>
-            <p>Conteúdo específico para Ver Gráficos</p>
+            <p>QS - Data Center</p>
           </div>
         );
         break;
