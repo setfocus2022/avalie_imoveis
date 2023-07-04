@@ -16,7 +16,7 @@ import NR3 from "views/NR3.js";
 const dashboardRoutes = [
   {
     path: "/dashboard",
-    name: "QS Back-End",
+    name: "Quality Seg Soluções",
     icon: "nc-icon nc-chart-pie-35",
     component: Dashboard,
     layout: "/admin",
