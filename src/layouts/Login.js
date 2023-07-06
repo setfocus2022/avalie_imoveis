@@ -59,7 +59,7 @@ const Login = (props) => {
           
           </form>
           
-          <p className={styles.p}><center>Painel desenvolvido pelo TI da QualitySEG LP | 2023</center></p>  
+          <p className={styles.p}><center>Painel desenvolvido pelo TI da QualitySEG LP | © 2023</center></p>  
           </div>    
       </div>
       
