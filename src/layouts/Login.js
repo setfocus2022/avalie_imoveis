@@ -56,9 +56,13 @@ const Login = (props) => {
             <input type="text" value={usuario} onChange={(e) => setUsuario(e.target.value)} placeholder="Usuário" className={styles.input}/>
             <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} placeholder="Senha" className={styles.input}/>
             <button type="submit" className={styles.button}>Login</button>
+          
           </form>
-        </div>
+          
+          <p className={styles.p}><center>Painel desenvolvido pelo TI da QualitySEG LP | 2023</center></p>  
+          </div>    
       </div>
+      
       <div className={styles.rightSide} style={{backgroundImage: `url(${images[backgroundIndex]})`}}>
         <img src={logo2} alt="Logo 2" className={styles.watermark} /> {/* Adicionando o logo2 como marca d'água */}
       </div>
