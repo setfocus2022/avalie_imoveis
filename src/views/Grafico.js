@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Col, Card as BootstrapCard, Row, Container } from 'react-bootstrap';
 import './styles.dashboard.scss';
 
-const Dashboard = () => {
+const Grafico = () => {
     const [isExpanded, setIsExpanded] = useState(false);
     const [content, setContent] = useState(null);
 
@@ -32,27 +32,15 @@ const Dashboard = () => {
             <center>
               <iframe
                 title="Graficos"
-                width="900"
-                height="536"
+                width="1000"
+                height="635"
                 src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
             </center>
-            <p>Conteúdo específico para Ver Gráficos</p>
+            <p>QS - Data Center</p>
           </div>
-        );
-        break;
-      case 'realizarOS':
-        setContent(
-          <iframe
-            title="OS 20"
-            width="900"
-            height="536"
-            src="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w"
-            frameBorder="0"
-            allowFullScreen
-          ></iframe>
         );
         break;
       case 'eSocial':
@@ -129,25 +117,22 @@ const Dashboard = () => {
       <Container fluid>
         <Row>
         <Col lg="2" sm="2" className="text-center mx-auto">
-          <BootstrapCard 
-            className="card-stats card-btn"
-            onClick={handleCardClick('realizarOS')}
-          >
-            <BootstrapCard.Body>
-              <div className="d-flex align-items-center justify-content-center" style={{ marginBottom: '15px' }}>
-                <img
-                  src="https://imgur.com/AtpGO1b.png"
-                  alt="Ícone"
-                  style={{ width: '50px', height: '50px' }}
-                />
-                <BootstrapCard.Title as="h4" style={{ fontSize: '15px', marginLeft: '10px' }}>
-                  <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">
+          <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">
+            <BootstrapCard className="card-stats card-btn">
+              <BootstrapCard.Body>
+                <div className="d-flex align-items-center justify-content-center" style={{ marginBottom: '15px' }}>
+                  <img
+                    src="https://imgur.com/AtpGO1b.png"
+                    alt="Ícone"
+                    style={{ width: '50px', height: '50px' }}
+                  />
+                  <BootstrapCard.Title as="h4" style={{ fontSize: '15px', marginLeft: '10px' }}>
                     Realizar OS
-                  </a>
-                </BootstrapCard.Title>
-              </div>
-            </BootstrapCard.Body>
-          </BootstrapCard>
+                  </BootstrapCard.Title>
+                </div>
+              </BootstrapCard.Body>
+            </BootstrapCard>
+          </a>
         </Col>
 
         <Col lg="2" sm="2" className="text-center mx-auto">
@@ -257,4 +242,4 @@ const Dashboard = () => {
     </>
   );
 };
-export default Dashboard;
+export default Grafico;
