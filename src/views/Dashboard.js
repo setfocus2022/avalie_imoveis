@@ -117,7 +117,7 @@ const Dashboard = () => {
       <Container fluid>
         <Row>
         <Col lg="2" sm="2" className="text-center mx-auto">
-          <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank">
+          <a href="https://forms.zoho.com/juliana15/form/FormulriodeOrdemdeServioContatoV205" target="_blank" rel="noopener noreferrer">
             <BootstrapCard className="card-stats card-btn">
               <BootstrapCard.Body>
                 <div className="d-flex align-items-center justify-content-center" style={{ marginBottom: '15px' }}>
