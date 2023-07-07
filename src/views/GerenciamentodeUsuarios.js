@@ -44,10 +44,10 @@ const Register = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.leftSide}>
+      <div className={styles.formContainer}>
         <div className={styles.content}>
           <div className={styles.title}>
-            QSLib | QualitySEG
+            Cadastro de Usuários
           </div>
           
 
@@ -63,9 +63,9 @@ const Register = () => {
              Cadastrar
             </button>
           </form>
-        </div>
+          </div>
       </div>
-      <div className={styles.rightSide}>
+      <div className={styles.tableContainer}>
         <UserTable usuarios={usuarios} setUsuarios={setUsuarios} />
       </div>
     </div>

@@ -12,6 +12,7 @@ import BaseConhecimento from "views/BaseConhecimento.js";
 import NRs from "views/NR.js";
 import NR2 from "views/NR2.js";
 import NR3 from "views/NR3.js";
+import GerenciamentodeUsuarios from "views/GerenciamentodeUsuarios.js";
 
 const dashboardRoutes = [
   {
@@ -124,6 +125,14 @@ const dashboardRoutes = [
             layout: "/admin",
         },
     ]
+},
+{
+  path: "/GerenciamentodeUsuarios",
+  name: "Gerenciamento de Usuarios",
+  icon: "nc-icon nc-circle-09",
+  component: GerenciamentodeUsuarios,
+  layout: "/admin",
+  roles: ['Administrador', 'Visualizador']
 },
 
 ];
