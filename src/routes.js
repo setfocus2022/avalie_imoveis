@@ -128,7 +128,7 @@ const dashboardRoutes = [
 },
 {
   path: "/GerenciamentodeUsuarios",
-  name: "Gerenciamento de Usuarios",
+  name: "Gerencia de Usuarios",
   icon: "nc-icon nc-circle-09",
   component: GerenciamentodeUsuarios,
   layout: "/admin",
