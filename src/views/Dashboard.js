@@ -34,7 +34,7 @@ const Dashboard = () => {
                 title="Graficos"
                 width="1000"
                 height="635"
-                src="https://forms.zohopublic.com/engenharia10qualityseg/report/AvaliaoPsicossocial/reportperma/HtOQJnQkyobXVHW3lH-CsC3OqIb09VrT64jnBYE9huw"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
