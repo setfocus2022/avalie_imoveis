@@ -37,19 +37,17 @@
   opacity: 0.7;
 }
 
-.button-editar {
-  background-color: #1A6F45; /* Verde */
+.editButton {
+  background-color: #1A6F45;
 }
 
-.button-salvar {
-  background-color: #1A6F45; /* Verde */
+.saveButton {
+  background-color: #1A6F45;
 }
 
-.button-cancelar {
-  background-color: red;
-  color: white;
+.cancelButton {
+  background-color: #FF0000;
 }
-
 .button {
   background-color: #1A6F45; /* Verde */
   border: none;

@@ -35,6 +35,21 @@ const UserTable = ({ usuarios, setUsuarios }) => {
     }
   };
 
+  const handleDelete = async id => {
+    try {
+      const response = await axios.delete(`https://weak-erin-bighorn-sheep-gear.cyclic.app/users/${id}`);
+
+      if (response.data.success) {
+        const updatedUsuarios = usuarios.filter(usuario => usuario.id !== id);
+        setUsuarios(updatedUsuarios);
+      } else {
+        alert('Exclusão falhou');
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <table className={styles.table}>
       <thead>
@@ -54,6 +69,7 @@ const UserTable = ({ usuarios, setUsuarios }) => {
           <tr key={usuario.id}>
             {editingIndex === index ? (
               <>
+                {/* Código de edição */}
                 <td><input name="usuario" type="text" value={usuarioForm.usuario} onChange={handleInputChange} /></td>
                 <td><input name="nome" type="text" value={usuarioForm.nome} onChange={handleInputChange} /></td>
                 <td><input name="email" type="text" value={usuarioForm.email} onChange={handleInputChange} /></td>
@@ -62,10 +78,11 @@ const UserTable = ({ usuarios, setUsuarios }) => {
                 <td><input name="setor" type="text" value={usuarioForm.setor} onChange={handleInputChange} /></td>
                 <td><input name="acesso" type="text" value={usuarioForm.acesso} onChange={handleInputChange} /></td>
                 <td>
-                <button onClick={() => handleSave(index)} className={`${styles.button} ${styles["button-salvar"]}`}>Salvar</button>
-
-                <button onClick={() => setEditingIndex(-1)} className={`${styles.button} ${styles["button-cancelar"]}`}>Cancelar</button>
-
+                  <button className={styles.saveButton} onClick={() => handleSave(index)}>Salvar</button>
+                  <button className={styles.cancelButton} onClick={() => setEditingIndex(-1)}>Cancelar</button>
+                  {index === editingIndex && (
+                    <button className={styles.editButton} onClick={() => handleDelete(usuario.id)}>Deletar</button>
+                  )}
                 </td>
               </>
             ) : (
@@ -78,8 +95,7 @@ const UserTable = ({ usuarios, setUsuarios }) => {
                 <td>{usuario.setor}</td>
                 <td>{usuario.acesso}</td>
                 <td>
-                <button onClick={() => handleEdit(usuario, index)} className={`${styles.button} ${styles["button-editar"]}`}>Editar</button>
-
+                  <button className={styles.editButton} onClick={() => handleEdit(usuario, index)}>Editar</button>
                 </td>
               </>
             )}
