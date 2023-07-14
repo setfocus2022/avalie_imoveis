@@ -6,6 +6,31 @@ const Dashboard = () => {
     const [isExpanded, setIsExpanded] = useState(false);
     const [content, setContent] = useState(null);
 
+   // Adicionamos a função logoutUser 
+   const logoutUser = () => {
+    console.log("Usuário foi deslogado devido à inatividade");
+    localStorage.removeItem('token');
+    window.location.href = '/login';
+  }
+
+  let timeout;
+  const resetInactivityTimer = () => {
+    if (timeout) clearTimeout(timeout);
+    timeout = setTimeout(logoutUser, 10 * 60 * 1000);
+  }
+
+  useEffect(() => {
+    handleOpenClick('verGraficos','verTrello');
+    document.addEventListener('mousemove', resetInactivityTimer);
+    document.addEventListener('keydown', resetInactivityTimer);
+    resetInactivityTimer();
+
+    return () => {
+      document.removeEventListener('mousemove', resetInactivityTimer);
+      document.removeEventListener('keydown', resetInactivityTimer);
+    }
+  }, []);
+
   useEffect(() => {
     handleOpenClick('verGraficos','verTrello');
   }, []);

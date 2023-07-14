@@ -10,6 +10,19 @@ const Grafico = () => {
     handleOpenClick('verGraficos','verTrello');
   }, []);
 
+  // Adicionamos a função logoutUser
+  const logoutUser = () => {
+    console.log("Usuário foi deslogado devido à inatividade");
+    localStorage.removeItem('token');
+    window.location.href = '/login';
+  }
+
+  let timeout;
+  const resetInactivityTimer = () => {
+    if (timeout) clearTimeout(timeout);
+    timeout = setTimeout(logoutUser, 10 * 60 * 1000);
+  }
+
   const handleOpenClick = (contentType) => {
     setIsExpanded(true);
     // Define o conteúdo da coluna expandida com base no tipo de conteúdo
@@ -55,41 +68,43 @@ const Grafico = () => {
         ></iframe>
         );
         break;
-   
-        case 'CAT':
-          setContent(
-            <div>
-              <center>
-                <iframe
-                  title="CAT"
-                  width="900"
-                  height="536"
-                  src="https://forms.zohopublic.com/vendas61/form/PREENCHIMENTOCHECKLISTPARAABERTURADECATS2210/formperma/G-YBBYanBv3bWzUDeCWveTNYVBWSqCeILuISBllwQOE"
-                  frameBorder="0"
-                  allowFullScreen
-                ></iframe>
-              </center>
-              <p>Conteúdo específico para Ver Gráficos</p>
-            </div>
-          );
-          break;
-          case 'PPP':
-            setContent(
-              <div>
-                <center>
-                  <iframe
-                    title="PPP"
-                    width="900"
-                    height="536"
-                    src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
-                    frameBorder="0"
-                    allowFullScreen
-                  ></iframe>
-                </center>
-                <p>Conteúdo específico para Ver Gráficos</p>
-              </div>
-            );
-            break;
+
+      case 'CAT':
+        setContent(
+          <div>
+            <center>
+              <iframe
+                title="CAT"
+                width="900"
+                height="536"
+                src="https://forms.zohopublic.com/vendas61/form/PREENCHIMENTOCHECKLISTPARAABERTURADECATS2210/formperma/G-YBBYanBv3bWzUDeCWveTNYVBWSqCeILuISBllwQOE"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </center>
+            <p>Conteúdo específico para Ver Gráficos</p>
+          </div>
+        );
+        break;
+
+      case 'PPP':
+        setContent(
+          <div>
+            <center>
+              <iframe
+                title="PPP"
+                width="900"
+                height="536"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </center>
+            <p>Conteúdo específico para Ver Gráficos</p>
+          </div>
+        );
+        break;
+
       case 'PGR':
         setContent(
           <iframe
@@ -102,6 +117,7 @@ const Grafico = () => {
           ></iframe>
         );
         break;
+
       default:
         setContent(null);
         break;
@@ -111,6 +127,17 @@ const Grafico = () => {
   const handleCardClick = (contentType) => () => {
     handleOpenClick(contentType);
   };
+
+  useEffect(() => {
+    document.addEventListener('mousemove', resetInactivityTimer);
+    document.addEventListener('keydown', resetInactivityTimer);
+    resetInactivityTimer();
+
+    return () => {
+      document.removeEventListener('mousemove', resetInactivityTimer);
+      document.removeEventListener('keydown', resetInactivityTimer);
+    }
+  }, []);
 
   return (
     <>

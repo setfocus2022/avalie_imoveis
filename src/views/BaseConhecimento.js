@@ -1,11 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Card as BootstrapCard, Row, Container } from 'react-bootstrap';
 import './styles.dashboard.scss';
 
 const BaseConhecimento = () => {
+  let timeout;
+
+  const logoutUser = () => {
+    console.log("Usuário foi deslogado devido à inatividade");
+    // Remova o token do armazenamento local
+    localStorage.removeItem('token');
+    // Redirecione o usuário para a página de login
+    window.location.href = '/login';
+  }
+
+  const resetInactivityTimer = () => {
+    if (timeout) clearTimeout(timeout);
+    timeout = setTimeout(logoutUser, 10 * 60 * 1000);
+  }
+
+  useEffect(() => {
+    // Adicione os listeners quando o componente é montado
+    document.addEventListener('mousemove', resetInactivityTimer);
+    document.addEventListener('keydown', resetInactivityTimer);
+    resetInactivityTimer();
+
+    // Remova os listeners quando o componente é desmontado
+    return () => {
+      document.removeEventListener('mousemove', resetInactivityTimer);
+      document.removeEventListener('keydown', resetInactivityTimer);
+    }
+  }, []);
+
   return (
     <>
-      <Container fluid>        
+      <Container fluid>      
         <Row className="justify-content-center">
           <Col md={10}>
           <p><center>Video dos Cursos EAD para compartilhar</center></p>

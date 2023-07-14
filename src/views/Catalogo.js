@@ -1,16 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';  // Acrescentamos o useEffect
 import { Badge, Button, Container } from 'react-bootstrap';
 import cursosData from './cursos.json';
 import styles from './CursosEad.module.scss';
 import CatalogoXLSX from '../views/Catalogo Cursos EAD - Atualizado 31.05.23.xlsx';
 import axios from 'axios';
 
+// Adicionamos a função logoutUser 
+const logoutUser = () => {
+  console.log("Usuário foi deslogado devido à inatividade");
+  localStorage.removeItem('token');
+  window.location.href = '/login';
+}
 
 const Catalogo = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState(cursosData);
   const [selectedCourses, setSelectedCourses] = useState([]);
 
+  // Adicionamos as funções do timer de inatividade
+  let timeout;
+  const resetInactivityTimer = () => {
+    if (timeout) clearTimeout(timeout);
+    timeout = setTimeout(logoutUser, 10 * 60 * 1000);
+  }
+
+  useEffect(() => {
+    document.addEventListener('mousemove', resetInactivityTimer);
+    document.addEventListener('keydown', resetInactivityTimer);
+    resetInactivityTimer();
+
+    return () => {
+      document.removeEventListener('mousemove', resetInactivityTimer);
+      document.removeEventListener('keydown', resetInactivityTimer);
+    }
+  }, []);
   const handleSearch = (e) => {
     const searchTerm = e.target.value;
     setSearchTerm(searchTerm);

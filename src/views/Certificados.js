@@ -1,9 +1,33 @@
-import React from "react";
-
-// react-bootstrap components
+import React, { useEffect } from "react";  // Acrescentamos o useEffect
 import { Badge, Button, Navbar, Nav, Container } from "react-bootstrap";
 
+// Adicionamos a função logoutUser 
+const logoutUser = () => {
+  console.log("Usuário foi deslogado devido à inatividade");
+  localStorage.removeItem('token');
+  window.location.href = '/login';
+}
+
 const YourComponent = () => {
+  // Adicionamos as funções do timer de inatividade
+  let timeout;
+  const resetInactivityTimer = () => {
+    if (timeout) clearTimeout(timeout);
+    timeout = setTimeout(logoutUser, 10 * 60 * 1000);
+  }
+
+  useEffect(() => {
+    document.addEventListener('mousemove', resetInactivityTimer);
+    document.addEventListener('keydown', resetInactivityTimer);
+    resetInactivityTimer();
+
+    return () => {
+      document.removeEventListener('mousemove', resetInactivityTimer);
+      document.removeEventListener('keydown', resetInactivityTimer);
+    }
+  }, []);
+  // Fim da adição do código de inatividade
+
   return (
     <Container>
       {/* Seu conteúdo existente */}

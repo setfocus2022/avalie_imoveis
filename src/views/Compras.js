@@ -7,15 +7,35 @@ const Compras = () => {
   const [content, setContent] = useState(null);
   const [lastContent, setLastContent] = useState('verGraficos');
 
+  // Adicionamos a função logoutUser 
+  const logoutUser = () => {
+    console.log("Usuário foi deslogado devido à inatividade");
+    localStorage.removeItem('token');
+    window.location.href = '/login';
+  }
+
+  let timeout;
+  const resetInactivityTimer = () => {
+    if (timeout) clearTimeout(timeout);
+    timeout = setTimeout(logoutUser, 10 * 60 * 1000);
+  }
+
   useEffect(() => {
     handleOpenClick('verGraficos');
+    document.addEventListener('mousemove', resetInactivityTimer);
+    document.addEventListener('keydown', resetInactivityTimer);
+    resetInactivityTimer();
+
+    return () => {
+      document.removeEventListener('mousemove', resetInactivityTimer);
+      document.removeEventListener('keydown', resetInactivityTimer);
+    }
   }, []);
 
   const handleOpenClick = (contentType) => {
     setIsExpanded(true);
     setLastContent(contentType);
 
-    // Define o conteúdo da coluna expandida com base no tipo de conteúdo
     switch (contentType) {
       case 'verGraficos':
         setContent(
@@ -91,8 +111,6 @@ const Compras = () => {
         </Col>
         </Row>
        
-        
-        
         <Row>
           <Col lg="12" className={`text-center expanded ${isExpanded ? 'show' : ''}`}>
             <BootstrapCard className="card-stats">
