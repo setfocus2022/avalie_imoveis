@@ -34,7 +34,7 @@ const YourComponent = () => {
       
       {/* Embed do GitMind */}
       <iframe
-        src="https://app.powerbi.com/view?r=eyJrIjoiYjVlNGRhYWMtODFhZC00MTJlLWI2YjMtZTI1Y2RkNTU1NzgyIiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+        src="https://app.powerbi.com/view?r=eyJrIjoiNTQ1OTMzNGUtYWMzZC00ZWIxLWFmN2YtZDdlZWY4MzU1OTVkIiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
         title="GitMind Embed"
         width="100%"
         height="600px"

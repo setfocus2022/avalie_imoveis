@@ -64,7 +64,7 @@ const Dashboard = () => {
                 allowFullScreen
               ></iframe>
             </center>
-            <p>QS - Data Center</p>
+            <p>QS - Dash de Análise de Ordem de Serviço e Contatos</p>
           </div>
         );
         break;
