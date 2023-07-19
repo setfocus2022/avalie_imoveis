@@ -47,12 +47,12 @@ const Grafico = () => {
                 title="Graficos"
                 width="1000"
                 height="635"
-                src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNDI4NTRmZTEtOTU5My00MGJkLTk2NDgtOWQzMWQ1NGNiZDE2IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
             </center>
-            <p>QS - Data Center</p>
+            <p>Dash BI de Avaliação dos Treinamentos Presenciais</p>
           </div>
         );
         break;
