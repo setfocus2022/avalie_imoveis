@@ -34,7 +34,7 @@ function TableList() {
 
   const resetInactivityTimer = () => {
     if (timeout) clearTimeout(timeout);
-    timeout = setTimeout(logoutUser, 10 * 60 * 1000);
+    timeout = setTimeout(logoutUser, 60 * 60 * 1000);
   };
 
   useEffect(() => {

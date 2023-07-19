@@ -16,7 +16,7 @@ const Dashboard = () => {
   let timeout;
   const resetInactivityTimer = () => {
     if (timeout) clearTimeout(timeout);
-    timeout = setTimeout(logoutUser, 10 * 60 * 1000);
+    timeout = setTimeout(logoutUser, 60 * 60 * 1000);
   }
 
   useEffect(() => {
@@ -140,6 +140,7 @@ const Dashboard = () => {
   return (
     <>
       <Container fluid>
+      <script language="javascript" type="text/javascript" src="http://writer.zohopublic.com/writer/docroll/806640654/10"></script>
         <Row>
         <Col lg="2" sm="2" className="text-center mx-auto">
           <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank" rel="noopener noreferrer">
