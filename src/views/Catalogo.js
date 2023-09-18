@@ -120,7 +120,7 @@ const Catalogo = () => {
         <div className={styles['search-bar']}>
           <input
             type="text"
-            placeholder="Pesquisar"
+            placeholder="Busca"
             value={searchTerm}
             onChange={handleSearch}
           />
