@@ -59,7 +59,7 @@ const Dashboard = () => {
                 title="Graficos"
                 width="1000"
                 height="635"
-                src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                src="https://app.powerbi.com/view?r=eyJrIjoiOTRlMjYyNzYtNWE3YS00OWM3LWI4ZGQtYTg2NDdlNzFmM2RlIiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
@@ -68,7 +68,7 @@ const Dashboard = () => {
                 title="Graficos"
                 width="1000"
                 height="635"
-                src="https://app.powerbi.com/view?r=eyJrIjoiOTRlMjYyNzYtNWE3YS00OWM3LWI4ZGQtYTg2NDdlNzFmM2RlIiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>              
