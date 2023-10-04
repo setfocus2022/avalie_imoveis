@@ -48,7 +48,7 @@ class Footer extends Component {
             </ul>
             <p className="copyright text-center">
               © {new Date().getFullYear()}{" "}
-              <a>QualitySEG </a>Back-End em desenvolvimento constante pela IA da #QSLib Versão 1.10.25
+              <a>QualitySEG </a>Back-End em por Matheus Miguel - MMS Informática 1.10.25
             </p>
           </nav>
         </Container>
