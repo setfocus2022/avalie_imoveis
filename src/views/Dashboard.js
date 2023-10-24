@@ -162,7 +162,7 @@ const Dashboard = () => {
       <script language="javascript" type="text/javascript" src="http://writer.zohopublic.com/writer/docroll/806640654/10"></script>
         <Row>
         <Col lg="2" sm="2" className="text-center mx-auto">
-          <a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank" rel="noopener noreferrer">
+          <a href="https://forms.zohopublic.com/engenharia10qualityseg/form/qslibOSV210/formperma/2maAFvwKpusTxCGPwIOQ3RZzuvfc7MKnco0wax6s7eU" target="_blank" rel="noopener noreferrer">
             <BootstrapCard className="card-stats card-btn">
               <BootstrapCard.Body>
                 <div className="d-flex align-items-center justify-content-center" style={{ marginBottom: '15px' }}>
