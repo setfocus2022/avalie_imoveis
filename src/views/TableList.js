@@ -90,10 +90,10 @@ function TableList() {
                       </td>
                     </tr>
                     <tr>
-                      <td><a href="https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w" target="_blank"> Realizar OS </a></td>
+                      <td><a href="https://forms.zohopublic.com/engenharia10qualityseg/form/qslibOSV210/formperma/2maAFvwKpusTxCGPwIOQ3RZzuvfc7MKnco0wax6s7eU" target="_blank"> Realizar OS </a></td>
                       <td><img src="https://imgur.com/xpdVMKe.png" alt="QR Code Placeholder" width="100" heith="100" /></td>
                       <td>
-                        <button onClick={() => LinkToClipboard('https://forms.zohopublic.com/juliana15/form/ComercialQualitySegEngenhariadeSeguranaeMedicinado/formperma/iKxe7-5DD6rWrFM_duryGABo0x1oPTqqlnpafECN11w')}>
+                        <button onClick={() => LinkToClipboard('https://forms.zohopublic.com/engenharia10qualityseg/form/qslibOSV210/formperma/2maAFvwKpusTxCGPwIOQ3RZzuvfc7MKnco0wax6s7eU')}>
                           Copiar Link
                         </button>
                       </td>
