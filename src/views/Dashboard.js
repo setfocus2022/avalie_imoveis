@@ -56,6 +56,16 @@ const Dashboard = () => {
           <div>
             <center>
 
+            <iframe
+                title="Graficos"
+                width="1000"
+                height="635"
+               
+                src="https://www.qualitysegconsultoria.com.br/2023/2036.pdf"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+
 
               <iframe
                 title="Graficos"
