@@ -61,7 +61,7 @@ const Dashboard = () => {
                 width="1000"
                 height="635"
                
-                src="https://www.qualitysegconsultoria.com.br/2023/2036.pdf"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNWZiNGNlYjMtN2U4OC00MzFlLTkzMmEtYzgzN2QzYzBjNTI4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
