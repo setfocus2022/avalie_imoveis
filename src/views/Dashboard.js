@@ -61,18 +61,17 @@ const Dashboard = () => {
                 width="1000"
                 height="635"
                
-                src="https://app.powerbi.com/view?r=eyJrIjoiNWZiNGNlYjMtN2U4OC00MzFlLTkzMmEtYzgzN2QzYzBjNTI4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
                 frameBorder="0"
                 allowFullScreen
-              ></iframe>
+              ></iframe>              
 
-
-              <iframe
+            <iframe
                 title="Graficos"
                 width="1000"
                 height="635"
                
-                src="https://app.powerbi.com/view?r=eyJrIjoiNDg2NzAxYzUtMzhhOC00OWQ5LWE4ZDUtOTRlNTA0YmFlYWE4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNWZiNGNlYjMtN2U4OC00MzFlLTkzMmEtYzgzN2QzYzBjNTI4IiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
