@@ -31,7 +31,7 @@ const YourComponent = () => {
       
       {/* Embed do GitMind */}
       <iframe
-        src="https://gitmind.com/app/docs/mk4nw5k6"
+        src="https://gitmind.com/app/docs/m7ccpbq8"
         title="GitMind Embed"
         width="100%"
         height="600px"
