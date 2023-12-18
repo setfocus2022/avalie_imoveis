@@ -57,7 +57,7 @@ const Dashboard = () => {
             <center>
             <p>UM NATAL ABENÇADO A TODOS!</p>
 
-                        
+                                    
        
             <iframe
                 title="Graficos"
@@ -76,6 +76,15 @@ const Dashboard = () => {
                 frameBorder="0"
                 allowFullScreen
               ></iframe>      
+
+              <iframe
+                title="Graficos"
+                width="1000"
+                height="635"
+                src="https://app.powerbi.com/view?r=eyJrIjoiNTQ1OTMzNGUtYWMzZC00ZWIxLWFmN2YtZDdlZWY4MzU1OTVkIiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>              
 
               <iframe
                 title="Graficos"
