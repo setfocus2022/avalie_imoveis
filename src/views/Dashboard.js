@@ -57,7 +57,15 @@ const Dashboard = () => {
             <center>
             <p>UM NATAL ABENÇADO A TODOS!</p>
 
-                                    
+            <tr>
+                      <td><a href="https://forms.zohopublic.com/juliana15/form/CadastrodeAlunoCursoEAD/formperma/0r9PO01dGPIIQpcEIPEJG6go2MUkIL-c9MfuG71SZ-4" target="_blank"> EAD </a></td>
+                      <td><img src="https://imgur.com/qgegUHY.png" alt="QR Code Placeholder" width="100" heith="100" /></td>
+                      <td>
+                        <button onClick={() => LinkToClipboard('https://forms.zohopublic.com/juliana15/form/CadastrodeAlunoCursoEAD/formperma/0r9PO01dGPIIQpcEIPEJG6go2MUkIL-c9MfuG71SZ-4')}>
+                          Copiar Link
+                        </button>
+                      </td>
+                    </tr>                                   
        
             <iframe
                 title="Graficos"
