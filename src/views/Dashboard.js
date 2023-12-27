@@ -55,7 +55,7 @@ const Dashboard = () => {
         setContent(
           <div>
             <center>
-            <p>UM NATAL ABENÇADO A TODOS!</p>
+            <p>****** FELIZ 2024 ! *******</p>
 
             <tr>
                       <td><a href="https://forms.zohopublic.com/engenharia10qualityseg/form/ChamadoSuporteTI/formperma/m6tO1WCwXtdVm36XYnfBoqM4kMHTNldKGb4VNVpVfug" target="_blank"> Formulário de Abertura de Chamado </a></td>
