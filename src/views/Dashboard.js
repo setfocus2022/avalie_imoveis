@@ -66,7 +66,10 @@ const Dashboard = () => {
           </td>
         </tr>     
               
-       
+        
+        <p> <strong> QUALITY ANALYTICS BRANCH </strong> </p>
+
+
         <p> DASH 1 - CONTROLE DE SUPORTE DE INFORMÁTICA  </p>                              
        
             <iframe
