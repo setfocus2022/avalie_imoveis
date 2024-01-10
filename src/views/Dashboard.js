@@ -71,7 +71,7 @@ const Dashboard = () => {
 
 
 
-        <p> DASH 1 - CONTROLE DE SUPORTE DE INFORMÁTICA  </p>                              
+        <p> <i> DASH 1 - CONTROLE DE SUPORTE DE INFORMÁTICA  </i>  </p>                              
        
             <iframe
                 title="Graficos"
@@ -94,6 +94,7 @@ const Dashboard = () => {
               ></iframe>      
 
                <p></p>
+
                <p> DASH 3 - CONTROLE DE NúMERO DE IMPRESSÕES DE CERTIFICADOS - IMPRESSORA RICH </p> 
 
               <iframe
