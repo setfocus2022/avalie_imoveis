@@ -55,7 +55,7 @@ const Dashboard = () => {
         setContent(
           <div>
             <center>
-            <p>****** FELIZ 2024 ! *******</p>
+            <p> QUALITY SOLUÇÕES </p>
 
             <tr>
                       <td><a href="https://forms.zohopublic.com/engenharia10qualityseg/form/ChamadoSuporteTI/formperma/m6tO1WCwXtdVm36XYnfBoqM4kMHTNldKGb4VNVpVfug" target="_blank"> Formulário de Abertura de Chamado </a></td>
