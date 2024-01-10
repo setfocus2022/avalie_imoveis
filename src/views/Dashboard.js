@@ -55,8 +55,10 @@ const Dashboard = () => {
         setContent(
           <div>
             <center>
-            <p>****** FELIZ 2024 ! *******</p>
+            <p> QUALITY ANALYTICS </p>
 
+
+            <p> DASH 1 - CONTROLE DE SUPORTE DE INFORMÁTICA </p>
             <tr>
                       <td><a href="https://forms.zohopublic.com/engenharia10qualityseg/form/ChamadoSuporteTI/formperma/m6tO1WCwXtdVm36XYnfBoqM4kMHTNldKGb4VNVpVfug" target="_blank"> Formulário de Abertura de Chamado </a></td>
                       <td>
@@ -74,7 +76,8 @@ const Dashboard = () => {
                 frameBorder="0"
                 allowFullScreen
               ></iframe>           
-       
+            
+            <p> DASH 2 - ORDEM DE SERVIÇO SETOR COMERCIAL </p> 
             <iframe
                 title="Graficos"
                 width="1000"
@@ -125,7 +128,7 @@ const Dashboard = () => {
 
                      
             </center>
-            <p>QS - Dash de Análise de Ordem de Serviço e Contatos</p>
+            <p> QUALITY ANALYTICS </p>
           </div>
           
         );
