@@ -55,7 +55,8 @@ const Dashboard = () => {
         setContent(
           <div>
             <center>
-         
+
+        <p> <strong> QUALITY ANALYTICS BRANCH </strong> </p>         
        
         <tr>
           <td><a href="https://forms.zohopublic.com/engenharia10qualityseg/form/ChamadoSuporteTI/formperma/m6tO1WCwXtdVm36XYnfBoqM4kMHTNldKGb4VNVpVfug" target="_blank"> Formulário de Abertura de Chamado </a></td>
@@ -67,7 +68,7 @@ const Dashboard = () => {
         </tr>     
               
         
-        <p> <strong> QUALITY ANALYTICS BRANCH </strong> </p>
+
 
 
         <p> DASH 1 - CONTROLE DE SUPORTE DE INFORMÁTICA  </p>                              
