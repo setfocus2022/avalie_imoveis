@@ -55,7 +55,17 @@ const Grafico = () => {
               Copiar Link
             </button>
           </td>
-        </tr>     
+        </tr>    
+
+            <iframe
+                title="Graficos"
+                width="1000"
+                height="635"
+                src="https://app.powerbi.com/view?r=eyJrIjoiMDk3ZjEzY2UtOTVhZS00MjVhLTk2MDItODc2Y2I5YzYwOWYwIiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>           
+            <p></p>         
 
               <iframe
                 title="Graficos"
