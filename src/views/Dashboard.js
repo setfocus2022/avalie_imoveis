@@ -56,7 +56,7 @@ const Dashboard = () => {
           <div>
             <center>
               
-            <p> QUALITY ANALYTICS </p>
+            <p> QUALITY ANALYTICS BRANCH </p>
 
 
             <p> DASH 1 - CONTROLE DE SUPORTE DE INFORMÁTICA </p>
