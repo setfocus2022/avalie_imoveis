@@ -2,7 +2,7 @@ import React from "react";
 import { useLocation, NavLink } from "react-router-dom";
 import { Nav } from "react-bootstrap";
 import logo from "../../assets/img/reactlogo.png";
-import sidebarImage from "../../assets/img/sidebar-4.jpg";
+import sidebarImage from "../../assets/img/sidebar-3.jpg";
 import SubMenu from './submenu';
 
 function Sidebar({ color, image, routes }) {
@@ -24,7 +24,7 @@ function Sidebar({ color, image, routes }) {
       <div className="sidebar-wrapper">
         <div className="logo d-flex align-items-center justify-content-start">
           <a
-            href="https://www.qualitysegconsultoria.com.br"
+            href=" "
             className="simple-text logo-mini mx-1"
           >
             <div>

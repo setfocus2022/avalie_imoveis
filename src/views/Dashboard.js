@@ -55,6 +55,7 @@ const Dashboard = () => {
         setContent(
           <div>
             <center>
+              
             <p> < strong > QUALITY ANALYTICS </strong> </p>
 
 
