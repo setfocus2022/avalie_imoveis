@@ -43,6 +43,9 @@ const Grafico = () => {
         setContent(
           <div>
             <center>
+             
+
+
               <iframe
                 title="Graficos"
                 width="1000"
