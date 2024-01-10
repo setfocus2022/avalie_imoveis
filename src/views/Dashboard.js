@@ -56,7 +56,7 @@ const Dashboard = () => {
           <div>
             <center>
 
-        <p> <strong> QUALITY ANALYTICS BRANCH </strong> </p>         
+        <p> <strong> QUALITY ANALYTICS </strong> </p>         
        
         <tr>
           <td><a href="https://forms.zohopublic.com/engenharia10qualityseg/form/ChamadoSuporteTI/formperma/m6tO1WCwXtdVm36XYnfBoqM4kMHTNldKGb4VNVpVfug" target="_blank"> Formulário de Abertura de Chamado </a></td>
@@ -83,7 +83,7 @@ const Dashboard = () => {
               ></iframe>           
             <p></p>
 
-            <p> DASH 2 - ORDEM DE SERVIÇO SETOR COMERCIAL </p> 
+            <p> <i> DASH 2 - ORDEM DE SERVIÇO SETOR COMERCIAL </i> </p> 
             <iframe
                 title="Graficos"
                 width="1000"
@@ -95,7 +95,7 @@ const Dashboard = () => {
 
                <p></p>
 
-               <p> DASH 3 - CONTROLE DE NúMERO DE IMPRESSÕES DE CERTIFICADOS - IMPRESSORA RICH </p> 
+               <p> <i> DASH 3 - CONTROLE DE NúMERO DE IMPRESSÕES DE CERTIFICADOS - IMPRESSORA RICH </i> </p> 
 
               <iframe
                 title="Graficos"
@@ -107,7 +107,7 @@ const Dashboard = () => {
               ></iframe>   
                
                <p></p>
-               <p> DASH 4 - CONTROLE DE USO DE VEÍCULOS </p> 
+               <p> <i> DASH 4 - CONTROLE DE USO DE VEÍCULOS </i>  </p> 
               <iframe
                 title="Graficos"
                 width="1000"
@@ -118,7 +118,7 @@ const Dashboard = () => {
               ></iframe>          
          
             <p></p>   
-            <p> DASH 5 - USUÁRIOS DO SISTEMA DNA </p> 
+            <p> <i> DASH 5 - USUÁRIOS DO SISTEMA DNA </i> </p> 
 
             <iframe
                 title="Graficos"
@@ -131,7 +131,7 @@ const Dashboard = () => {
               ></iframe>
 
             <p></p>   
-            <p> DASH 6 - RELAÇÃO DE EQUIPAMENTOS </p> 
+            <p> <i> DASH 6 - RELAÇÃO DE EQUIPAMENTOS </i> </p> 
 
                 <iframe
                 title="Graficos"
