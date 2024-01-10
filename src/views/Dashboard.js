@@ -55,7 +55,7 @@ const Dashboard = () => {
         setContent(
           <div>
             <center>
-            <p> QUALITY ANALYTICS </p>
+            <p> < strong > QUALITY ANALYTICS </strong> </p>
 
 
             <p> DASH 1 - CONTROLE DE SUPORTE DE INFORMÁTICA </p>
@@ -76,7 +76,8 @@ const Dashboard = () => {
                 frameBorder="0"
                 allowFullScreen
               ></iframe>           
-            
+            <p></p>
+
             <p> DASH 2 - ORDEM DE SERVIÇO SETOR COMERCIAL </p> 
             <iframe
                 title="Graficos"
@@ -86,6 +87,9 @@ const Dashboard = () => {
                 frameBorder="0"
                 allowFullScreen
               ></iframe>      
+
+               <P>  </P>
+               <p> DASH 3 - CONTROLE DE NUMERO DE IMPRESSÕES DE CERTIFICADOS - IMPRESSORA RICH </p> 
 
               <iframe
                 title="Graficos"
