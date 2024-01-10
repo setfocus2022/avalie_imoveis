@@ -55,12 +55,9 @@ const Dashboard = () => {
         setContent(
           <div>
             <center>
-            <iframe>
-            <p> QUALITY ANALYTICS BRANCH </p>
-
-
-      <p> DASH 1 - CONTROLE DE SUPORTE DE INFORMÁTICA </p>
-      <tr>
+         
+       
+        <tr>
           <td><a href="https://forms.zohopublic.com/engenharia10qualityseg/form/ChamadoSuporteTI/formperma/m6tO1WCwXtdVm36XYnfBoqM4kMHTNldKGb4VNVpVfug" target="_blank"> Formulário de Abertura de Chamado </a></td>
           <td>
           <button onClick={() => LinkToClipboard('https://forms.zohopublic.com/engenharia10qualityseg/form/ChamadoSuporteTI/formperma/m6tO1WCwXtdVm36XYnfBoqM4kMHTNldKGb4VNVpVfug')}>
@@ -69,7 +66,7 @@ const Dashboard = () => {
           </td>
         </tr>     
               
-              </iframe>  
+       
                                           
        
             <iframe

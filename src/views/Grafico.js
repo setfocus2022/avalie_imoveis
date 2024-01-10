@@ -43,7 +43,7 @@ const Grafico = () => {
         setContent(
           <div>
             <center>
-            <iframe>
+            
             <p> QUALITY ANALYTICS BRANCH </p>
 
 
@@ -56,9 +56,6 @@ const Grafico = () => {
             </button>
           </td>
         </tr>     
-              
-              </iframe>  
-
 
               <iframe
                 title="Graficos"

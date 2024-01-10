@@ -17,7 +17,7 @@ import GerenciamentodeUsuarios from "views/GerenciamentodeUsuarios.js";
 const dashboardRoutes = [
   {
     path: "/dashboard",
-    name: "Quality Seg Soluções",
+    name: "Quality Soluções",
     icon: "nc-icon nc-chart-pie-35",
     component: Dashboard,
     layout: "/admin",
