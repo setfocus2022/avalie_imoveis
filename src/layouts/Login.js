@@ -37,7 +37,7 @@ const Login = (props) => {
         
         console.log('Role after login:', localStorage.getItem('role')); // Log the role after login
   
-        props.history.push('/admin/Graficos');
+        props.history.push('/admin/Dashboard');
       } else {
         alert('Login falhou');
       }
