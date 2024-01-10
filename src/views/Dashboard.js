@@ -89,7 +89,7 @@ const Dashboard = () => {
                 allowFullScreen
               ></iframe>      
 
-               <P>  </P>
+        
                <p> DASH 3 - CONTROLE DE NUMERO DE IMPRESSÕES DE CERTIFICADOS - IMPRESSORA RICH </p> 
 
               <iframe
