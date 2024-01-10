@@ -67,7 +67,7 @@ const Dashboard = () => {
         </tr>     
               
        
-                                          
+        <p> DASH 1 - CONTROLE DE SUPORTE DE INFORMÁTICA  </p>                              
        
             <iframe
                 title="Graficos"
@@ -89,8 +89,8 @@ const Dashboard = () => {
                 allowFullScreen
               ></iframe>      
 
-        
-               <p> DASH 3 - CONTROLE DE NUMERO DE IMPRESSÕES DE CERTIFICADOS - IMPRESSORA RICH </p> 
+               <p></p>
+               <p> DASH 3 - CONTROLE DE NúMERO DE IMPRESSÕES DE CERTIFICADOS - IMPRESSORA RICH </p> 
 
               <iframe
                 title="Graficos"
@@ -99,8 +99,10 @@ const Dashboard = () => {
                 src="https://app.powerbi.com/view?r=eyJrIjoiNTQ1OTMzNGUtYWMzZC00ZWIxLWFmN2YtZDdlZWY4MzU1OTVkIiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
                 frameBorder="0"
                 allowFullScreen
-              ></iframe>              
-
+              ></iframe>   
+               
+               <p></p>
+               <p> DASH 4 - CONTROLE DE USO DE VEÍCULOS </p> 
               <iframe
                 title="Graficos"
                 width="1000"
@@ -109,6 +111,9 @@ const Dashboard = () => {
                 frameBorder="0"
                 allowFullScreen
               ></iframe>          
+         
+            <p></p>   
+            <p> DASH 5 - USUÁRIOS DO SISTEMA DNA </p> 
 
             <iframe
                 title="Graficos"
@@ -119,6 +124,9 @@ const Dashboard = () => {
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
+
+            <p></p>   
+            <p> DASH 6 - RELAÇÃO DE EQUIPAMENTOS </p> 
 
                 <iframe
                 title="Graficos"
@@ -133,7 +141,7 @@ const Dashboard = () => {
 
                      
             </center>
-            <p> QUALITY ANALYTICS </p>
+            <p> <strong>QUALITY ANALYTICS</strong> </p>
           </div>
           
         );
