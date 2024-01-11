@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import styles from './Login.module.css';
-import backgroundImage1 from './back1.mp4';
+import backgroundImage1 from './back1.gif';
 import backgroundImage2 from './background-2.png';
 import backgroundImage3 from './background-3.png';
 import icon from './icone.png'; // Importando o icone
