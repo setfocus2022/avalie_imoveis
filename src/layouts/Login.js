@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import styles from './Login.module.css';
-import backgroundImage1 from './background-1.png';
+import backgroundImage1 from './back1.mp4';
 import backgroundImage2 from './background-2.png';
 import backgroundImage3 from './background-3.png';
 import icon from './icone.png'; // Importando o icone
@@ -59,7 +59,7 @@ const Login = (props) => {
           
           </form>
           
-          <p className={styles.p}><center>Painel desenvolvido Matheus Miguel - MMS Tecnologia| © 2023</center></p>  
+          <p className={styles.p}><center>Painel desenvolvido  MMS Tecnologia| © 2024</center></p>  
           </div>    
       </div>
       
