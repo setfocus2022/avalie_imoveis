@@ -71,17 +71,7 @@ const Dashboard = () => {
 
 
 
-        <p> <i> DASH 1 - CONTROLE DE SUPORTE DE INFORMÁTICA  </i>  </p>                              
-       
-            <iframe
-                title="Graficos"
-                width="1000"
-                height="635"
-                src="https://app.powerbi.com/view?r=eyJrIjoiMDk3ZjEzY2UtOTVhZS00MjVhLTk2MDItODc2Y2I5YzYwOWYwIiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
-                frameBorder="0"
-                allowFullScreen
-              ></iframe>           
-            <p></p>
+
 
             <p> <i> DASH 2 - ORDEM DE SERVIÇO SETOR COMERCIAL </i> </p> 
             <iframe
@@ -141,7 +131,19 @@ const Dashboard = () => {
                 frameBorder="0"
                 allowFullScreen
               ></iframe>
-    
+
+
+         <p> <i> DASH 1 - CONTROLE DE SUPORTE DE INFORMÁTICA  </i>  </p>                              
+       
+            <iframe
+                title="Graficos"
+                width="1000"
+                height="635"
+                src="https://app.powerbi.com/view?r=eyJrIjoiMDk3ZjEzY2UtOTVhZS00MjVhLTk2MDItODc2Y2I5YzYwOWYwIiwidCI6ImMxNTk2NDVkLTM3ZjUtNDg5Ny1hNTQ5LTNhZDIzMDkyZTdjNyJ9"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>           
+            <p></p>   
 
 
                      
