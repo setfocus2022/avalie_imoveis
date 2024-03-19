@@ -50,7 +50,7 @@ const Login = (props) => {
         <div className={styles.content}>
           <div className={styles.title}>
             <img src={icon} alt="Icon" className={styles.icon} /> {/* Adicionando o ícone */}
-            QSLib | QualitySEG
+            Viva Imóveis | Avaliação de Imóveis
           </div>
           <form onSubmit={handleLogin} className={styles.form}>
             <input type="text" value={usuario} onChange={(e) => setUsuario(e.target.value)} placeholder="Usuário" className={styles.input}/>
@@ -59,7 +59,7 @@ const Login = (props) => {
           
           </form>
           
-          <p className={styles.p}><center>Painel desenvolvido  MMS Tecnologia| © 2024</center></p>  
+          <p className={styles.p}><center>Painel desenvolvido por Check Mind Tecnologia| © 2024</center></p>  
           </div>    
       </div>
       
