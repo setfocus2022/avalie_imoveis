@@ -56,7 +56,7 @@ const Login = (props) => {
             <input type="text" value={usuario} onChange={(e) => setUsuario(e.target.value)} placeholder="Usuário" className={styles.input}/>
             <input type="password" value={senha} onChange={(e) => setSenha(e.target.value)} placeholder="Senha" className={styles.input}/>
             <button type="submit" className={styles.button}>Login</button>
-          
+          bacon
           </form>
           
           <p className={styles.p}><center>Painel desenvolvido por Check Mind Tecnologia| © 2024</center></p>  
