@@ -20,9 +20,9 @@
     "mercadopago": "^1.5.16",
     "mysql": "^2.18.1",
     "next": "^13.4.4",
-    "react": ">=16.8.0",
+    "react": "^18.2.0",
     "react-bootstrap": "^2.4.0",
-    "react-dom": ">=16.8.0",
+    "react-dom": "^18.2.0",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "5.0.1",
@@ -47,10 +47,6 @@
     "compile:scss": "sass src/assets/scss/light-bootstrap-dashboard-pro-react.scss src/assets/css/light-bootstrap-dashboard-pro-react.css",
     "minify:scss": "sass src/assets/scss/light-bootstrap-dashboard-pro-react.scss src/assets/css/light-bootstrap-dashboard-pro-react.min.css --style compressed",
     "build:scss": "npm run compile:scss && npm run minify:scss"
-  },
-  "peerDependencies": {
-    "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
   },
   "browserslist": {
     "production": [
