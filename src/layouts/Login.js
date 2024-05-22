@@ -4,8 +4,8 @@ import styles from './Login.module.css';
 import backgroundImage1 from './back1.gif';
 import backgroundImage2 from './background-2.png';
 import backgroundImage3 from './background-3.png';
-import icon from './icone.png'; // Importando o icone
-import logo2 from './logo 2.png'; // Importando o logo2
+import icon from './icone.png';
+import logo2 from './logo 2.png';
 
 const images = [backgroundImage1, backgroundImage2, backgroundImage3];
 
@@ -24,24 +24,28 @@ const Login = (props) => {
     };
   }, []);
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    axios.post('https://backend-avalie.onrender.com/login', { usuario, senha })
-    .then(response => {
-      console.log('Response from server:', response.data); // Log the response from the server
-  
+
+    try {
+      const response = await axios.post('https://backend-avalie.onrender.com/login', { usuario, senha });
+      console.log('Response from server:', response.data); 
+
       if (response.data.success) {
         localStorage.setItem('token', response.data.token);
         localStorage.setItem('username', usuario);
         localStorage.setItem('role', response.data.role);
-        
-        console.log('Role after login:', localStorage.getItem('role')); // Log the role after login
-  
+
+        console.log('Role after login:', localStorage.getItem('role')); 
+
         props.history.push('/admin/Dashboard');
       } else {
         alert('Login falhou');
       }
-    });
+    } catch (error) {
+      console.error("Erro no login:", error);
+      alert('Ocorreu um erro ao fazer o login. Por favor, tente novamente mais tarde.');
+    }
   };
 
   return (
