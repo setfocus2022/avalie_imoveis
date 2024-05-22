@@ -23,7 +23,7 @@ const Register = () => {
 
   useEffect(() => {
     const fetchUsuarios = async () => {
-      const response = await axios.get('https://weak-erin-bighorn-sheep-gear.cyclic.app/users');
+      const response = await axios.get('https://backend-avalie.onrender.com/users');
       console.log(response.data); // Verifique o formato dos dados aqui
       setUsuarios(Array.isArray(response.data.users) ? response.data.users : []);
     };
@@ -50,7 +50,7 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://weak-erin-bighorn-sheep-gear.cyclic.app/register', usuarioForm);
+      const response = await axios.post('https://backend-avalie.onrender.com/register', usuarioForm);
 
       if (response.data.success) {
         setUsuarios([...usuarios, response.data.usuario]);

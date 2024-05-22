@@ -20,7 +20,7 @@ const UserTable = ({ usuarios, setUsuarios }) => {
 
   const handleSave = async index => {
     try {
-      const response = await axios.put(`https://weak-erin-bighorn-sheep-gear.cyclic.app/users/${usuarioForm.id}`, usuarioForm);
+      const response = await axios.put(`https://backend-avalie.onrender.com/users/${usuarioForm.id}`, usuarioForm);
 
       if (response.data.success) {
         const updatedUsuarios = [...usuarios];
