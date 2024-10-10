@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { useLocation, Route, Switch } from "react-router-dom";
-import ErrorPage from "./ErrorPage"; // Adicionado aqui
+import { useLocation, Route, Switch, Redirect } from "react-router-dom";
+import ErrorPage from "./ErrorPage"; // Certifique-se de importar o ErrorPage
 import AdminNavbar from "components/Navbars/AdminNavbar";
 import Footer from "components/Footer/Footer";
 import Sidebar from "components/Sidebar/Sidebar";
@@ -14,33 +14,32 @@ function Admin() {
   const [hasImage, setHasImage] = React.useState(true);
   const location = useLocation();
   const mainPanel = React.useRef(null);
+  const token = localStorage.getItem('token');
+  const role = localStorage.getItem('role');
 
   const getRoutes = (routes) => {
-    const role = localStorage.getItem('role');
     return routes.map((prop, key) => {
       if (prop.layout === "/admin") {
-        if (prop.roles && !prop.roles.includes(role)) {
-          return (
-            <Route
-              path={prop.layout + prop.path}
-              render={(props) => <ErrorPage {...props} />}  // ErrorPage é um componente que você precisará criar
-              key={key}
-            />
-          );
-        } else {
-          return (
-            <Route
-              path={prop.layout + prop.path}
-              render={(props) => <prop.component {...props} />}
-              key={key}
-            />
-          );
+        if (!token) {
+          return <Redirect to="/login" key={key} />;
         }
-      } else {
-        return null;
+
+        if (prop.roles && !prop.roles.includes(role)) {
+          return <Route path={prop.layout + prop.path} render={(props) => <ErrorPage {...props} />} key={key} />;
+        }
+
+        return (
+          <Route
+            path={prop.layout + prop.path}
+            render={(props) => <prop.component {...props} />}
+            key={key}
+          />
+        );
       }
+      return null;
     });
   };
+
 
   React.useEffect(() => {
     document.documentElement.scrollTop = 0;
@@ -59,8 +58,7 @@ function Admin() {
   return (
     <>
       <div className="wrapper">
-      <Sidebar color={color} image={hasImage ? image : ""} routes={routes} role={localStorage.getItem('role')} />
-
+        <Sidebar color={color} image={hasImage ? image : ""} routes={routes} />
         <div className="main-panel" ref={mainPanel}>
           <AdminNavbar />
           <div className="content">

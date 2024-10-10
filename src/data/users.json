@@ -1,0 +1,20 @@
+[
+    {
+      "email": "admin@painel.com",
+      "senha": "@Desenho1977",
+      "role": "admin"
+    },
+  
+    {
+      "email": "user@painel.com",
+      "senha": "12345678",
+      "role": "user"
+    },
+  
+    {
+      "email": "comercial@painel.com",
+      "senha": "12345678",
+      "role": "comercial"
+    }
+  
+  ]
